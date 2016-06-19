@@ -1,0 +1,13 @@
+   .center 
+      {
+          margin: auto;
+          width: 59%;
+      }
+   .inline
+      {
+          display:inline;
+      }
+	  div.centered      {  }
+div.columns       { min-width: 600px;  margin: 0 auto;}
+div.columns div   { width: 300px; float: left; }
+div.clear         { clear: both; }
