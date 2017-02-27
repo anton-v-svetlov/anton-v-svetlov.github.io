@@ -1,0 +1,30 @@
+    .leftCentered {
+        float: left; 
+        align-content:center; 
+        width: 50%; 
+        text-align:center;
+    }
+
+    .centeredHeader 
+    {
+        text-align:center;
+    }
+
+    .gallery
+    {
+        display: flex; 
+        overflow: auto; 
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .namePhotoContacts
+    {
+                display: flex; 
+        overflow: auto; 
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap;
+    }
