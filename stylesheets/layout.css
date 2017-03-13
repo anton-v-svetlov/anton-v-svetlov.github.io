@@ -10,19 +10,12 @@
         text-align:center;
     }
 
-    .gallery
-    {
-        display: flex; 
-        overflow: auto; 
-        justify-content: space-around; 
-        align-items: center;
-        flex-wrap: wrap;
-    }
+
 
 
     .namePhotoContacts
     {
-                display: flex; 
+        display: flex; 
         overflow: auto; 
         justify-content: space-around; 
         align-items: center;

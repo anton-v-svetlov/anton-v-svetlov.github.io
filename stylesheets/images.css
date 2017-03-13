@@ -1,0 +1,45 @@
+    .gallery
+    {
+        display: flex; 
+        overflow: auto; 
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+  div.gallery div a span {
+      text-align: center; 
+      display: block;
+  }
+
+@media screen and (max-width: 540px) {
+  div.gallery div img {
+    width: 64px;
+  }
+  .icon {
+      width: 16px;
+      height: 16px;
+      margin: 2px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  div.gallery div img {
+    width: 128px;
+  }
+
+  .icon 
+  {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+  }
+}
+
+.iconFooter
+{
+    font-size: smaller
+}
+
+
+
