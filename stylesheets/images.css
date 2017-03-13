@@ -5,6 +5,7 @@
         justify-content: space-around; 
         align-items: center;
         flex-wrap: wrap;
+        margin: 20px;
     }
 
   div.gallery div a span {
@@ -30,10 +31,24 @@
 
   .icon 
   {
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
     margin: 4px;
   }
+}
+
+div.iconFooter div p a img 
+{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+div.iconFooter div 
+{
+    margin: 4px;
+    font-size: larger;
+    float: left;    
 }
 
 .iconFooter

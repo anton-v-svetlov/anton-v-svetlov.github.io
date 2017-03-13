@@ -5,13 +5,10 @@
         text-align:center;
     }
 
-    .centeredHeader 
-    {
+    h3, h2, h1
+    {        
         text-align:center;
     }
-
-
-
 
     .namePhotoContacts
     {

@@ -34,6 +34,8 @@ http://onliner.by/
 
 Поддержка Schema.org Microdata.
 
+Иконки: http://www.flaticon.com/collections/MTAxMDkwNQ==
+
 
 Сделать:
 ---
@@ -54,7 +56,7 @@ http://onliner.by/
 
 Починить красоту текста кода и валидацию разметки. 
 
-Schema орг offer area contact person phone places(Minsk). Добавить семантик полей.
+Schema орг  contact  places(Minsk). Добавить семантик полей.
 
 Добавить Разное и Фасады. Alt text картинок.
 
@@ -77,4 +79,6 @@ Cделать  редактироыание статики и картинок.
 ЧЕЛОВЕЧНЕЕ
  
 Add feedback and like contolrs (Disuss? VK? FB?)
+
+Сделать Социалки красиво текст на уровен с картинко. И кнопку фидбэка.
  
