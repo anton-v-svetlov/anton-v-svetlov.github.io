@@ -8,6 +8,7 @@
     h3, h2, h1
     {        
         text-align:center;
+        margin-top: 10pt;
     }
 
     .namePhotoContacts
@@ -26,9 +27,3 @@
   }
 }
 
-@media screen and (min-width: 540px) {
-  body div div 
-  {
-    margin-bottom: 30px;
-  }
-}

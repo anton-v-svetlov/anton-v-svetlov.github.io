@@ -1,6 +1,15 @@
-    
-    
+    .infoGraphicHeader
+    {
+        display: flex; 
+        overflow: auto; 
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10pt;
+    }
 
+
+    
     
     .gallery
     {
@@ -21,6 +30,10 @@
   div.gallery div img {
     width: 64px;
   }
+  div.infoGraphicHeader img {
+    display: none;
+  }
+
   .icon {
       width: 16px;
       height: 16px;
@@ -32,7 +45,10 @@
   div.gallery div img {
     width: 128px;
   }
-
+  div.infoGraphicHeader img {
+    width: 32px;
+    margin-bottom: 10pt;
+  }    
   .icon 
   {
     width: 16px;
