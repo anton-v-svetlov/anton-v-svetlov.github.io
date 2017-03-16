@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" lang="ru" />
   <meta name="description" content="Изготовление, сборка, монтаж мебели и деревянных изделий." />
-  <meta name="keywords" content="мебель, монтаж, массив, дсп, фасады, минск, фасады, боровляны, заславль, раскрой, дерево, столяр"
+  <meta name="keywords" content="мебель, монтаж, массив, дсп, фасады, минск, фасады, боровляны, заславль, раскрой, дерево, столяр, раскрой, производство"
   />
   <meta name="author" content="Антон Светлов" />
   <meta name="viewport" content="width=device-width">
@@ -18,24 +18,26 @@
 </head>
 
 <body>
-  <div itemscope itemprop="Person" itemtype="http://schema.org/Person" class="wrapper">
-    <h1 itemprop="name" class="centeredHeader">Антон Валерьевич Светлов</h1>
-    <h2 class="centeredHeader">Проектирование, изготовление, сборка, монтаж мебели и деревянных изделий.</h2>
+  <div itemscope itemprop="Organization" itemtype="http://schema.org/Organization" class="wrapper">
+    <h2 itemprop="name">Проектирование, изготовление, сборка, монтаж мебели и деревянных изделий.</h2>
 
-    <div class="namePhotoContacts">
-      <div>
-        <img src="images/anton_v_svetlov.jpg" alt="Моя фотография в момент работы" />
-      </div>
-      <div>
-        <a href="tel:+375336009949"><span itemprop="telephone">+375336009949</span></a>
-        <img src="http://mts.by/favicon.ico" class="icon" alt="МТС Беларусь" />
-        <img src="http://vbd.cdn.viber.com/sites/all/themes/viber/favicon.ico" class="icon" alt="Viber чат" />
-        <p><a id="email" href="email:anton.v.svetlov@gmail.com" itemprop="email">anton.v.svetlov@gmail.com</a></p>
+    <div itemscope itemprop="funder" itemtype="http://schema.org/Person">
+      <h1 itemprop="name">Антон Валерьевич Светлов</h1>
+      <div class="namePhotoContacts">
+        <div>
+          <img src="images/anton_v_svetlov.jpg" alt="Моя фотография в момент работы" />
+        </div>
+        <div>
+          <a href="tel:+375336009949"><span itemprop="telephone">+375336009949</span></a>
+          <img src="images/mts.ico" class="icon" alt="МТС Беларусь" />
+          <img src="images/viber.ico" class="icon" alt="Viber чат" />
+          <p><a href="email:anton.v.svetlov@gmail.com"><span itemprop="email">anton.v.svetlov@gmail.com</span></a></p>
+        </div>
       </div>
     </div>
 
     <div>
-      <h3 class="centeredHeader">
+      <h3>
         <a id="about" href="#about"></a>Обо мне
       </h3>
 
@@ -44,28 +46,55 @@
         и производств.
       </p>
 
-      <div itemscope itemtype="http://schema.org/Service">
-        <h3 class="centeredHeader">
+      <div itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+        <h3>
           <a id="works" href="#works" aria-hidden="true"></a>Виды Работ
         </h3>
 
-        <ul acms="static-editable" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
-          <li>Весь цикл производства мебели - от идеи до монтажа.</li>
-          <li>Осуществление замеров, проектирование мебели, аранжировка интерьеров</li>
+        <ul acms="static-editable">
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-            <div itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Производство, сборка и установка любой мебели</span>
-            </div>
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Весь цикл производства мебели - от идеи до монтажа.</span>
+            </span>
           </li>
-          <li>Фасады дверные и кухонные</li>
-          <li>Мебель из массива, мебель под заказ</li>
-          <li>Кухни, шкафы-купе, встроенная и корпусная мебель</li>
-          <li>Разработка карт распила/листа-раскроя в <a href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a></li>
-          <li>Проектирование и аранжировка интерьеров в программе <a href="http://ru.pro100.eu/pro100">PRO100</a></li>
-          <li>Монтаж встроенной бытовой техники</li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Осуществление замеров, проектирование мебели, аранжировка интерьеров в программе <a href="http://ru.pro100.eu/pro100">PRO100</a></span>
+            </span>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Производство, сборка и установка любой мебели</span>
+            </span>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Фасады дверные и кухонные</span>
+            </span>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Мебель из массива, мебель под заказ</span>
+            </span>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Кухни, шкафы-купе, встроенная и корпусная мебель</span>
+            </span>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Разработка карт распила/листа-раскроя в <a href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a></span>
+            </span>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Монтаж встроенной бытовой техники</span>
+            </span>
+          </li>
         </ul>
       </div>
-      <h3 class="centeredHeader">
+      <h3>
         <a id="примеры" href="#Примеры" aria-hidden="true"></a>Примеры Работ
       </h3>
 
@@ -102,15 +131,13 @@
         </div>
         <div>
           <a href="https://goo.gl/photos/k364ipcKEZv4tpDm8">
-            <div>
-              <img src="images/proizvodstvo_ofis.jpg" alt="Производственная и офисная мебель" />
-              <span>Производство и офис</span>
-            </div>
+            <img src="images/proizvodstvo_ofis.jpg" alt="Производственная и офисная мебель" />
+            <span>Производство и офис</span>
           </a>
         </div>
       </div>
 
-      <h3 class="centeredHeader">
+      <h3>
         <a id="prof" href="#prof" aria-hidden="true"></a>Профессиональная область
       </h3>
       <p>
@@ -118,72 +145,83 @@
         столяр.
       </p>
 
-      <div>
-        <h3 class="centeredHeader">
-          <a id="user-content-Дополнительно" href="#Дополнительно" aria-hidden="true"></a>Дополнительно</h3>
-        <img src="images/toolbox.svg" style="width: 32px; display: flex; ">
-        <p>
-          Есть свой микроавтобус, производственная площадь и необходимый инструмент. Большой опыт работы с различной фурнитурой (Blum,
-          Hafele, Hettich, Grass и т.д.). Родился в 1981 году, образование неконченное высшее. Прописка г.
-
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-      Минск
-      <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCircle">
+      <div itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <h3>
+          <a href="#Где_я_живу_и_работаю" aria-hidden="true"></a>
+          Где я живу и работаю
+        </h3>
+        <span itemprop="name">Минск</span>,
+        <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCircle">
         <span itemprop="geoMidpoint" itemscope itemtype="http://schema.org/GeoCoordinates">
           <meta itemprop="latitude" content="53.90" />
           <meta itemprop="longitude" content="27.56" />
         </span>
-          <meta itemprop="geoRadius" content="50" />
-          </span>
-          </span>
-          . Служил, есть опыт вождения грузовиков в армии. Есть опыт работы сварщиком и высоковольтными линиями. Работал на фирмах:
-          Фельтре, Эко-Мастер, Stanley. По договору работал и с другими фирмами. Базовые знания англиского языка.
+        <meta itemprop="geoRadius" content="50" />
+        </span> Минсий Район, д. Боровляны, г. Радошковичи
+      </div>
+
+      <div>
+        <h3>
+          <a href="#Инструмент_оборудование" aria-hidden="true"></a>
+          Инструмент, оборудование
+        </h3>
+        <img src="images/toolbox.svg" style="width: 32px; display: flex; ">
+        <p>
+          Есть свой микроавтобус, производственная площадь, необходимый инструмент. Большой опыт работы с различной фурнитурой (Blum,
+          Hafele, Hettich, Grass и т.д.).
         </p>
       </div>
 
       <div class="iconFooter">
-        <div>
-          <div>
-            <a href="http://jobs.tut.by/resume/a531065aff02df74390039ed1f336630637461">Работа TUT.BY
-              <img  src="http://jobs.tut.by/favicon.ico" alt="Работа TUT.BY" />
-			  </a>
-          </div>
-        </div>
+        <h3>
+          <a href="#Дополнительно" aria-hidden="true"></a>
+          Дополнительно
+        </h3>
+        <p>
+          Родился в 1981 году, образование неконченное высшее. Служил, есть опыт вождения
+          грузовиков в армии. Есть опыт работы сварщиком и высоковольтными линиями. Работал на фирмах: Фельтре, Эко-Мастер,
+          Stanley. По договору работал и с другими фирмами. Базовые знания англиского языка.
+        </p>
+
         <div>
           <p>
-            <a href="https://www.facebook.com/profile.php?id=100015332536903">Facebook
-              <img src="https://www.facebook.com/favicon.ico"  alt="Facebook"/>
-			  </a>
+            <a href="https://www.facebook.com/profile.php?id=100015332536903">
+              <img src="images/facebook.svg" alt="Facebook" />
+            </a>
           </p>
         </div>
         <div>
           <p>
-            <a href="https://www.ok.ru/anton.v.svetlov">Одноклассники<img src="https://ok.ru/favicon.ico"alt="Одноклассники"/></a>
+            <a href="http://jobs.tut.by/resume/a531065aff02df74390039ed1f336630637461"><img src="images/tutby.png" alt="Работа TUT.BY" /></a>
           </p>
         </div>
         <div>
           <p>
-            <a href="https://vk.com/id73722654">ВКонтакте
-              <img src="https://vk.com/favicon.ico" alt="ВКонтакте" />
-			  </a>
+            <a href="https://www.ok.ru/anton.v.svetlov"><img src="images/ok.ico" alt="Одноклассники" /></a>
           </p>
         </div>
         <div>
           <p>
-            <a href="https://www.etsy.com/ru/people/antonsvetlov1981">Etsy<img src="https://www.etsy.com/favicon.ico" alt="Etsy"/></a>
+            <a href="https://vk.com/id73722654">
+              <img src="images/vk.svg" alt="ВКонтакте" />
+            </a>
           </p>
         </div>
         <div>
           <p>
-            <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B2-326329112/">LinkedIn
-              <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" />
-			      </a>
+            <a href="https://www.etsy.com/ru/people/antonsvetlov1981"><img src="images/etsy.ico" alt="Etsy" /></a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B2-326329112/">
+              <img src="images/linkedin.svg" alt="LinkedIn" />
+            </a>
           </p>
         </div>
       </div>
     </div>
   </div>
-
   <script src="javascripts/scale.fix.js"></script>
   <script src="javascripts/google.analytics.js"></script>
   <script src="javascripts/yandex.metrica.js"></script>

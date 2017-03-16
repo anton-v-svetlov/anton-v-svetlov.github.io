@@ -1,3 +1,7 @@
+    
+    
+
+    
     .gallery
     {
         display: flex; 
@@ -48,13 +52,18 @@ div.iconFooter div
 {
     margin: 4px;
     font-size: larger;
-    float: left;    
+    float: left; 
+
 }
 
 .iconFooter
 {
-    font-size: smaller
+    font-size: smaller;
+    display: flex; 
+    overflow: auto; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
 }
-
 
 

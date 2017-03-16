@@ -18,3 +18,17 @@
         align-items: center;
         flex-wrap: wrap;
     }
+
+@media screen and (max-width: 540px) {
+  body div div 
+  {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  body div div 
+  {
+    margin-bottom: 30px;
+  }
+}
