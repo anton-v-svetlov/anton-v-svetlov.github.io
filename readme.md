@@ -1,10 +1,10 @@
-Персональный сайт Антона Светлова.
-
+[Изготовление, сборка, монтаж мебели и деревянных изделий](http://www.anton-v-svetlov.by/)
+----
 
 
 Похожие сайты по смыслу:
 ----
-http://www.andreivoronin.com/
+http www andreivoronin com
 
 Поддерживаемые бровзеры:
 ----
@@ -21,9 +21,9 @@ http://www.andreivoronin.com/
 
 Дизайн под локаль(чтобы людям было близко):
 ---
-https://www.kufar.by
+https www kufar by
 
-http://onliner.by/
+http onliner by
 
 
 
@@ -36,7 +36,9 @@ http://onliner.by/
 
 Иконки: http://www.flaticon.com/collections/MTAxMDkwNQ==
 
-Все стили выделяют структуру неявно через отношения вне HTML чтобы семанитку оставить чистой.
+Все стили выделяют структуру неявно через отношения вне HTML чтобы семанитку оставить чистой. Стили ссылаются на семантика, а не HTML на стили.
+
+Только один файл стиля и сайт HTML редактируемый.
 
 
 Сделать:
@@ -80,7 +82,7 @@ Cделать  редактироыание статики и картинок.
 
 ЧЕЛОВЕЧНЕЕ
  
-Add feedback and like contolrs (Disuss? VK? FB?)
+Add feedback and like or save or share contolrs (VK FB Twitter Disuss? ) 
 
 Сделать Социалки красиво текст на уровен с картинко. И кнопку фидбэка.
 
