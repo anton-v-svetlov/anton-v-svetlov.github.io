@@ -1,3 +1,9 @@
+/* 
+follows the structure of HTML on first encounter of items for selection
+whole file editing using good text redactor and find and replace,
+e.g. operation of puting new div via div issues are searched via regex of formatted css
+*/
+
 div[itemtype="http://schema.org/Organization"] {
     width: 860px;
     margin: 0 auto;
@@ -33,7 +39,7 @@ h1 {
     margin-top: 10pt;
 }
 
-.namePhotoContacts {
+div[itemprop="funder"] > div {
     display: flex;
     overflow: auto;
     justify-content: space-around;
@@ -41,12 +47,26 @@ h1 {
     flex-wrap: wrap;
 }
 
-cf3
+div[itemprop="funder"] > div  > div
 {
    position: relative;
 }
 
-@keyframes cf4FadeInOut {
+div[itemprop="funder"] > div  > div > img
+{
+    max-width: 160px;
+}
+
+div[itemprop="funder"] > div  > div > img:first-child {
+   position: absolute; 
+   animation-name: funderPhotosAnimation;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-duration: 16s;
+}
+
+
+@keyframes funderPhotosAnimation {
  0% {
    opacity:1;
  }
@@ -64,21 +84,11 @@ cf3
  }
 }
 
-.top
-{
-   position: absolute; 
-   animation-name: cf4FadeInOut;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-duration: 16s;
-}
 
 
 
-div.namePhotoContacts img 
-{
-    max-width: 160px;
-}
+
+
 
 
 
