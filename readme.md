@@ -56,23 +56,17 @@ http onliner by
 Сделать:
 ---
 
-https://twitter.com/anton_v_svetlov
-https://vk.com/anton_v_svetlov
-https://www.instagram.com/antonsvetlov1981/
-
 Рамочки картинок в галерее как в вики
 
 Разделить главы более видимо.
 
 Заменить значки на SVG.
 
-Должен быть в Skype WhatsUp.
-
-Инстаграм связи
+Сделать линки на Skype WhatsUp.
 
 Края округлые у фото. Фото большего размера. Все фото без И. Кажое фото отдельно.
 
-anton-mebel.by   mebel.anton-v-svetlov.by mebel-zakaz.by  
+anton-mebel.by mebel.anton-v-svetlov.by mebel-zakaz.by  
 
 Фотка антона где он фоткает себя в зеркале втроеннго в большую мебель как бы сразу после работы.
 
@@ -107,6 +101,4 @@ Cделать  редактироыание статики и картинок.
 Add feedback and like or save or share contolrs (VK FB Twitter Disuss? ) 
 
 Сделать Социалки красиво текст на уровен с картинко. И кнопку фидбэка.
-
-Удоволетворить Yandex справочник и занести в https://sprav.yandex.by
 

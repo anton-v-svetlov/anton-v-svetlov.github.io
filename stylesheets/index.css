@@ -4,6 +4,8 @@ whole file editing using good text redactor and find and replace,
 e.g. operation of puting new div via div issues are searched via regex of formatted css
 */
 
+
+
 div[itemtype="http://schema.org/Organization"] {
     width: 860px;
     margin: 0 auto;
@@ -178,6 +180,13 @@ body {
     color: #727272;
     font-weight: 400;
 }
+
+/*
+body {
+  background-color: #ffffff;
+  background-image: url("wood-pattern.png");
+}
+*/
 
 h1,
 h2,
