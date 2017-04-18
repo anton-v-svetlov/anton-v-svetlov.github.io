@@ -86,14 +86,6 @@ div[itemprop="funder"] > div  > div > img:first-child {
  }
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 540px) {
     body div div {
         margin-bottom: 20px;
@@ -116,6 +108,11 @@ div[itemprop="funder"] > div  > div > img:first-child {
     align-items: center;
     flex-wrap: wrap;
     margin: 20px;
+}
+
+.gallery div a {
+    float:left; 
+    text-align:center
 }
 
 div.gallery div a span {
