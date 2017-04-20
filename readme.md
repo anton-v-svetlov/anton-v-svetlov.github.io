@@ -1,4 +1,4 @@
-[Изготовление, сборка, монтаж мебели и деревянных изделий](http://www.anton-v-svetlov.by/)
+[Проектироваине, изготовление, сборка, монтаж мебели и деревянных изделий](http://www.anton-v-svetlov.by/)
 ----
 
 Сайт проектируется под минимальную поддержку и повседневную вовлеченность владельца. Сайт описывает только факты которые есть и были. Абстартрактное содережимое и реклама минимальны. Социальные и интерактивные инструменты предоставлены другими публичными сервисами. 
@@ -20,7 +20,7 @@ http www andreivoronin com
 
 Полностью:
 
-- IE 11, Edge
+- IE 11, Edge, Servo
 
 - Firefox, Chrome десктопные с ПОСЛЕДНИЯ ВЕРСИЯ - 2.
 
@@ -59,6 +59,10 @@ http onliner by
 Только один файл стиля и сайт HTML редактируемый. Админка для редактирования напрямую одной страницы. Для редактировия HTML профи редакторами и плагины для редакторов. 
 
 Например явное вбитие размера картинки для быстрой загрузки.
+
+Генератор могут быть использованы только я поддержики старых бровзеров.
+
+No images data are directly build into HTML.
 
 Сделать:
 ---
@@ -110,6 +114,13 @@ Add feedback and like or save or share contolrs (VK FB Twitter Disuss? )
 Use cmall icons 
 https://github.com/edent/SuperTinySocialIcons
 
+Use chatt links from https://edent.tel/
+
+Optimize for keyboard laout.
+
+Translate to English. What about generators and templates? Это нужно чтобы люди заграничные видели человека и местные. 
+
+
 Satisfy Google Ligh house and modify most for AMP
 
 Забрать картинки у антон.
@@ -117,3 +128,26 @@ Satisfy Google Ligh house and modify most for AMP
 Фото с лицом на красно фоне сдлетаь 2ой а монитор 3ий
 
 Протестировать без картинок закрузки и без js и без сss
+
+
+indext.template.html is opened in Chrome/Firefox/Servo. May be use existing stuff like 
+They detect that run locally. Finds .git and all other folder with given rights.
+User edits page and presses save. Then commits it out of browser and merges local files.
+index.html generate with all JS compiled away as much as possible.
+https://www.google.by/search?q=in+browser+static+site+generator&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&ei=M0P2WM6pOdDi8AfC_6vwDQ
+https://www.staticgen.com/
+
+pinteters.
+
+brand name what loves or sells or long term
+
+gallery with writing is must for optimiztion
+
+посмотрел воронина. так у него на фотках 300 лайков. крутяк конешно.
+надо в общем мне оптимизировать еще
+и родича тренировать
+на тексты
+у воронина под мобилами плохо работате сайт как мне кажется
+и тяжелый
+я родичу делаю под мобилы и легкий
+чтобы грузился с плохого интеренета
