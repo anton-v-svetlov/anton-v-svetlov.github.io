@@ -2,7 +2,6 @@ backend:
   name: github
   repo: anton-v-svetlov/anton-v-svetlov.github.io
   branch: master
-  site_domain: anton-v-svetlov.netlify.com
   
 media_folder: "images/uploads" 
 
