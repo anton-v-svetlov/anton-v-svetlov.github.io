@@ -64,6 +64,8 @@ http onliner by
 
 No images data are directly build into HTML.
 
+Used small icons https://github.com/edent/SuperTinySocialIcons
+
 Сделать:
 ---
 
@@ -111,8 +113,7 @@ Add feedback and like or save or share contolrs (VK FB Twitter Disuss? )
 
 Сделать Социалки красиво текст на уровен с картинко. И кнопку фидбэка.
 
-Use cmall icons 
-https://github.com/edent/SuperTinySocialIcons
+Add flikr
 
 Use chatt links from https://edent.tel/
 
