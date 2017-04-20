@@ -13,6 +13,4 @@ collections:
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Foo", name: "foo", widget: "foo"}
-      - {label: "Bar", name: "bar", widget: "image"}
       - {label: "Publish Date", name: "date", widget: "datetime"}  
