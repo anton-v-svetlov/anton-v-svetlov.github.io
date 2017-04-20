@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: anton-v-svetlov/anton-v-svetlov.github.io
+  branch: master
+  site_domain: anton-v-svetlov.netlify.com
+  
+media_folder: "images/uploads" 
+
+collections: 
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Foo", name: "foo", widget: "foo"}
+	  - {label: "Bar", name: "bar", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}  

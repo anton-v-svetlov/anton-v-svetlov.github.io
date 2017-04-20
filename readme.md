@@ -137,7 +137,7 @@ index.html generate with all JS compiled away as much as possible.
 https://www.google.by/search?q=in+browser+static+site+generator&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&ei=M0P2WM6pOdDi8AfC_6vwDQ
 https://www.staticgen.com/
 
-pinteters.
+https://www.pinterest.com/antonvsvetlov/
 
 brand name what loves or sells or long term
 
