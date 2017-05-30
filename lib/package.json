@@ -1,0 +1,16 @@
+{
+	"name" : "lahoda",
+	"preferGlobal" : true,
+	"version" : "0.0.1",
+	"author" : "lahoda <dzmitry.lahoda@gmail.com>",
+	"description" : "Tool to build static personal web site embeedded into internet.",
+	"engines" : {
+		"node" : ">=1.1"
+	},
+	"bin" : {
+		"lahoda" : "./bin/lahoda.js"
+	},	
+	"dependencies" : {
+		"jimp" : "0.2.27"
+	}
+}

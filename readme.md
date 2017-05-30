@@ -66,6 +66,13 @@ No images data are directly build into HTML.
 
 Used small icons https://github.com/edent/SuperTinySocialIcons
 
+Хостинг, управление контентом и разработка
+-----
+
+Только GIT, JS, Node. Возмодно работать через Browser и внешние системы. Но как только они вырубаются, то пользователь может выкачать через git site. 
+Положить картинки и тексте в папку. Заранать NPM создание контента. Закомитать GIT. Или как вариант заюзать pure JS destkop app продеклать всё тоже самоей. То есть Только JS и Shell.
+
+
 Сделать:
 ---
 
@@ -79,7 +86,7 @@ Used small icons https://github.com/edent/SuperTinySocialIcons
 
 Края округлые у фото. Фото большего размера. Все фото без И. Кажое фото отдельно.
 
-anton-mebel.by mebel.anton-v-svetlov.by mebel-zakaz.by  
+anton-mebel.by mebel.anton-v-svetlov.by mebel-zakaz.by    светлов.бел антон-светлов.бел мебель.бел антон-мебебель.бел
 
 Фотка антона где он фоткает себя в зеркале втроеннго в большую мебель как бы сразу после работы.
 
@@ -122,7 +129,7 @@ Optimize for keyboard laout.
 Translate to English. What about generators and templates? Это нужно чтобы люди заграничные видели человека и местные. 
 
 
-Satisfy Google Ligh house and modify most for AMP
+Satisfy Google Ligh house and modify most for AMP.
 
 Забрать картинки у антон.
 
@@ -152,3 +159,14 @@ gallery with writing is must for optimiztion
 и тяжелый
 я родичу делаю под мобилы и легкий
 чтобы грузился с плохого интеренета
+
+Sorry for calling your servers to much. Keeping aside all problems I had, I have one now. It seems `npm install` runs first. But I need probably `npm install lib` and then `npm install`. But may workaround this by pushing my module into npm servers.
+
+Overall I digging next:
+Build fully SEO static page with own gallery for furniture making person so it capable of doing some gallery and main page some fields editing experience with 2 options. Person works from within VM+git+node+pure JavaScript modules to build site/images locally(including image resizing) OR via simple stuff via github.com + Netlify/admin in Chrome. Robust fully capable solution or simple more depend at on 3rd parties but working from Browser. May be I more of need of thing like custom Electron on demand in cloud with git hooks.
+
+Just checking how Netlify suits for such endeavor.
+
+In short I want build next http://www.anton-v-svetlov.by/ with gallery inside + RDF for Facebook + English translation + AMP + gallery upload and build, plus SOLID(or what ever p2p web will fly) in future. I do not want external gallery as it gives less page optimization I guess, and no need for back database. I.e. I want to compile away as much JavaScript from my page/pages as possible. Compile out as much of possible queries as possible (i.e. do combinations during compile time, not during run time).
+
+Your Basic plan is far from me as it seems. I need kind of checkout/custom git hooks/ custom FUSE like to add image+meta, but in Browser for layman person. You system seems kind of suits, but may be you are aware of other?
