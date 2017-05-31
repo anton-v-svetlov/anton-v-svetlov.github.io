@@ -11,31 +11,27 @@
 Минимум работы в социальных сетях от персоны. Только заливка многих фотографий в ОДНО место-галлерею, заливка уникальных и вещей ремесла на продажу в другое. 
 То есть без еженедельных обновлений социальных сетей, рекламы и ведения блогов.
 
-Похожие сайты по смыслу:
-----
-http www andreivoronin com
 
 Поддерживаемые бровзеры:
 ----
 
 Полностью:
 
-- IE 11, Edge, Servo
+- IE 11, Edge, Servo, Firefox, Chrome latest releases, mobile and desktop
 
-- Firefox, Chrome десктопные с ПОСЛЕДНИЯ ВЕРСИЯ - 2.
+- Display size from 500x400px.
 
-- Firefox, Chrome мобильные от 4 дюймов.
+- Disabled JavaScript still usable.
 
-- IE10 и выключенный JavaScript просто чтобы показывало. 
-
-Дизайн под локаль(чтобы людям было близко):
+Inspiration links
 ---
 https www kufar by
 
 http onliner by
 
+http www andreivoronin com
 
-Цели оптимизации поиска
+Seach optimization
 ---
 
 антон светлов, светлов мебель - в 10

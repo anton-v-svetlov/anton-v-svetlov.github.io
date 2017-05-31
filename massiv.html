@@ -3,127 +3,151 @@
 
 <head>
   <meta charset="utf-8" lang="ru" />
-
-  <style>
-    div.gallery {
-      border: 1px solid #ccc;
-    }
-    
-    div.gallery:hover {
-      border: 1px solid #777;
-    }
-    
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-    
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-    
-    * {
-      box-sizing: border-box;
-    }
-    
-    .responsive {
-      padding: 0 6px;
-      float: left;
-      width: 24.99999%;
-    }
-    
-    @media only screen and (max-width: 700px) {
-      .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-      }
-    }
-    
-    @media only screen and (max-width: 500px) {
-      .responsive {
-        width: 100%;
-      }
-    }
-    
-
-  </style>
+  <title>Мебель из массива дерева.</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css'>
+  <link rel="stylesheet" href="stylesheets/gallery.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-    <div style="display: flex; overflow: auto; justify-content: space-around; align-items: center;flex-wrap: wrap">
+  <h2>Примеры работ из массива дерева</h2>
+  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery" style="display: flex; overflow: auto; justify-content: space-around; align-items: center;flex-wrap: wrap">
 
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/скамейка_для_сада.jpg">
-        <img src="images/gallery/massiv/thumb/скамейка_для_сада.jpg" alt="Скамейка для сада" width="256" height="192">
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/скамейка_для_сада.jpg" itemprop="contentUrl" data-size="702x527">
+        <img src="images/gallery/massiv/thumb/скамейка_для_сада.jpg" itemprop="thumbnail" alt="Скамейка для сада" width="256" height="192"
+        />
       </a>
-      <div class="desc">Скамейка для сада. Простоит и прослужит долго.</div>
-    </div>
+      <figcaption itemprop="caption description">Скамейка для сада. Простоит и прослужит долго.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/журнальный_столик.jpg" itemprop="contentUrl" data-size="1000x800">
+        <img src="images/gallery/massiv/thumb/журнальный_столик.jpg" itemprop="thumbnail" alt="Журнальный столик" width="256" height="204"
+        />
+      </a>
+      <figcaption itemprop="caption description">Журнальный столик.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/стол_овальный_в_мастерской.jpg" itemprop="contentUrl" data-size="1024x768">
+        <img src="images/gallery/massiv/thumb/стол_овальный_в_мастерской.jpg" itemprop="thumbnail" alt="Стол овальный в мастерской"
+          width="256" height="192" />
+      </a>
+      <figcaption itemprop="caption description">Стол овальный в мастерской.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/стол_рабочий_тумба_массив_дерево.jpg" itemprop="contentUrl" data-size="512x393">
+        <img src="images/gallery/massiv/thumb/стол_рабочий_тумба_массив_дерево.jpg" itemprop="thumbnail" alt="" width="256" height="196"
+        />
+      </a>
+      <figcaption itemprop="caption description">Cтол рабочий из массива дерева.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/стол_и_стулья_массив_дерево.jpg" itemprop="contentUrl" data-size="800x600">
+        <img src="images/gallery/massiv/thumb/стол_и_стулья_массив_дерево.jpg" itemprop="thumbnail" alt="Стол и стулья из массива дерева."
+          width="256" height="192" />
+      </a>
+      <figcaption itemprop="caption description">Стол и стулья из массива дерева.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/стул_с_спинкой_деревянный.jpg" itemprop="contentUrl" data-size="500x760">
+        <img src="images/gallery/massiv/thumb/стул_с_спинкой_деревянный.jpg" itemprop="thumbnail" alt="Стул с спинкой деревянный."
+          width="168" height="256" />
+      </a>
+      <figcaption itemprop="caption description">Стул с спинкой деревянный.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/gallery/massiv/тумба.jpg" itemprop="contentUrl" data-size="220x190">
+        <img src="images/gallery/massiv/thumb/тумба.jpg" itemprop="thumbnail" alt="Тумба" width="256" height="222" />
+      </a>
+      <figcaption itemprop="caption description">Тумба.</figcaption>
+    </figure>
   </div>
 
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/журнальный_столик.jpg">
-        <img src="images/gallery/massiv/thumb/журнальный_столик.jpg" alt="Журнальный столик" width="256" height="204">
-      </a>
-      <div class="desc">Журнальный столик.</div>
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+      <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
     </div>
+
   </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/стол_овальный_в_мастерской.jpg">
-        <img src="images/gallery/massiv/thumb/стол_овальный_в_мастерской.jpg" alt="Стол овальный в мастерской" width="256" height="192">
-      </a>
-      <div class="desc">Стол овальный в мастерской.</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/стол_рабочий_тумба_массив_дерево.jpg">
-        <img src="images/gallery/massiv/thumb/стол_рабочий_тумба_массив_дерево.jpg" alt="" width="256" height="196">
-      </a>
-      <div class="desc">Cтол рабочий из массива дерева.</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/стол_и_стулья_массив_дерево.jpg">
-        <img src="images/gallery/massiv/thumb/стол_и_стулья_массив_дерево.jpg" alt="Стол и стулья из массива дерева." width="256" height="192">
-      </a>
-      <div class="desc">Стол и стулья из массива дерева.</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/стул_с_спинкой_деревянный.jpg">
-        <img src="images/gallery/massiv/thumb/стул_с_спинкой_деревянный.jpg" alt="Стул с спинкой деревянный." width="168" height="256">
-      </a>
-      <div class="desc">Стул с спинкой деревянный.</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="gallery">
-      <a target="_blank" href="images/gallery/massiv/тумба.jpg">
-        <img src="images/gallery/massiv/thumb/тумба.jpg" alt="Тумба" width="256" height="222">
-      </a>
-      <div class="desc">Тумба.</div>
-    </div>
-  </div>
-
-</div>
-
   <div style="padding:6px;">
     <p>Изделия из массива дерева. Натуральные, долговечные, надежные.</p>
-
   </div>
   <a href="index.html">На главную</a>
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js'></script>
+  <script src="javascripts/gallery.js"></script>
+  <script src="javascripts/google.analytics.js"></script>
+  <script src="javascripts/yandex.metrica.js"></script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/42764399" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
 </body>
 
 </html>
