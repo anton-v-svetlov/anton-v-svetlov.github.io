@@ -3,7 +3,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     // parse slide data (url, title, size ...) from DOM elements 
     // (children of gallerySelector)
     var parseThumbnailElements = function(el) {
-        var thumbElements = el.childNodes,
+        var thumbElements = el.querySelectorAll("figure"),
             numNodes = thumbElements.length,
             items = [],
             figureEl,
@@ -14,7 +14,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         for(var i = 0; i < numNodes; i++) {
 
             figureEl = thumbElements[i]; // <figure> element
-
+            
             // include only element nodes 
             if(figureEl.nodeType !== 1) {
                 continue;
@@ -202,4 +202,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('.my-gallery');
+initPhotoSwipeFromDOM('div[itemtype=\"http\:\/\/schema.org\/ImageGallery\"]');
