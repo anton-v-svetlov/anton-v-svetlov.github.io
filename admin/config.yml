@@ -12,8 +12,9 @@ collections:
 
     create: true
     fields:
-      - {label: "Название", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Короткое описание", name: "body", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text"}
       - {label: "Фотография", name: "photo", widget: "image"}
 
   - name: "kuhni" 
@@ -21,6 +22,7 @@ collections:
     folder: "сontent/kuhni"
     create: true
     fields:
-      - {label: "Название", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Короткое описание", name: "body", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text"}
       - {label: "Фотография", name: "photo", widget: "image"}	  
