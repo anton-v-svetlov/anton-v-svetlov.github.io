@@ -3,11 +3,13 @@ backend:
   repo: anton-v-svetlov/anton-v-svetlov.github.io
   branch: master
 
+media_folder: "images/upload"   
+  
 collections: 
   - name: "massiv" 
     label: "Изделия из массива дерева"
     folder: "сontent/massiv"
-    media_folder: "images/gallery/massiv" 
+
     create: true
     fields:
       - {label: "Название", name: "title", widget: "string", tagname: "h1"}
@@ -17,7 +19,6 @@ collections:
   - name: "kuhni" 
     label: "Кухни"
     folder: "сontent/kuhni"
-    media_folder: "images/gallery/kuhni" 
     create: true
     fields:
       - {label: "Название", name: "title", widget: "string", tagname: "h1"}
