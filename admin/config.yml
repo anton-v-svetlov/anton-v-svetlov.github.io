@@ -2,15 +2,24 @@ backend:
   name: github
   repo: anton-v-svetlov/anton-v-svetlov.github.io
   branch: master
-  
-media_folder: "images/uploads" 
 
 collections: 
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}  
+  - name: "massiv" 
+    label: "Изделия из массива дерева"
+    folder: "сontent/massiv"
+    media_folder: "images/gallery/massiv" 
+    create: true
+    fields:
+      - {label: "Название", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Фотография", name: "photo", widget: "image"}
+
+  - name: "kuhni" 
+    label: "Кухни"
+    folder: "сontent/kuhni"
+    media_folder: "images/gallery/kuhni" 
+    create: true
+    fields:
+      - {label: "Название", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Фотография", name: "photo", widget: "image"}	  
