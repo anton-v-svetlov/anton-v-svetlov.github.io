@@ -113,7 +113,8 @@ div.gallery div a span {
 
 @media screen and (max-width: 540px) {
     div.gallery div img {
-        width: 64px;
+        width: 50%;
+        height: 50%;
     }
     div.infoGraphicHeader img {
         display: none;
