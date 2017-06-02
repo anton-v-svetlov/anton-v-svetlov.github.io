@@ -9,6 +9,8 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css'>
   <link rel="stylesheet" href="stylesheets/gallery.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
+  <script src="https://get.mavo.io/mavo.js"></script>
 </head>
 
 <body>
@@ -18,10 +20,8 @@
 
   <div id="mygallery" itemscope itemtype="http://schema.org/ImageGallery">
     <h2>Примеры работ из массива дерева</h2>
-    <div>
-      <p>
-        <h3>Изделия из массива дерева. Натуральные, долговечные, надежные.</h3>
-      </p>
+    <div mv-app="gallery" id="admin" mv-bar="status edit save clear logout" mv-storage="https://github.com/anton-v-svetlov/anton-v-svetlov.github.io/content/massiv/contentDescription.txt">
+      <h3 property="contentDescription">Изделия из массива дерева. Натуральные, долговечные, надежные.</span>
     </div>
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="images/gallery/massiv/скамейка_для_сада.jpg" itemprop="contentUrl" data-size="702x527">

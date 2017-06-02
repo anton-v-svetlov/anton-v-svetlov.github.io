@@ -5,6 +5,10 @@ backend:
 
 media_folder: "images/upload"   
   
+options: 
+  - Кухня
+  - Изделия из массива дерева
+
 collections: 
   - name: "massiv" 
     label: "Изделия из массива дерева"
@@ -13,9 +17,10 @@ collections:
     create: true
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Короткое описание", name: "body", widget: "string"}
+      - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text"}
       - {label: "Фотография", name: "photo", widget: "image"}
+      - {label: "asd", name: "qweqqw", widget: "select"}
 
   - name: "kuhni" 
     label: "Кухни"
@@ -23,6 +28,6 @@ collections:
     create: true
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Короткое описание", name: "body", widget: "string"}
+      - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text"}
       - {label: "Фотография", name: "photo", widget: "image"}	  

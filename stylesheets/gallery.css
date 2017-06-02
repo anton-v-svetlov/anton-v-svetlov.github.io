@@ -1,9 +1,14 @@
+[mv-app]:not(:target) .mv-bar {
+    display: none;
+}
+
 div[itemtype="http://schema.org/ImageGallery"] {
     width: 860px;
     margin: auto;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print,
+screen and (max-width: 960px) {
     div[itemtype="http://schema.org/ImageGallery"] {
         width: auto;
         margin: 0;
@@ -11,18 +16,17 @@ div[itemtype="http://schema.org/ImageGallery"] {
 }
 
 div[itemtype="http://schema.org/ImageGallery"] img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
-
 div[itemtype="http://schema.org/ImageGallery"] figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 128px;
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 128px;
 }
 
 div[itemtype="http://schema.org/ImageGallery"] figcaption {
-  display: none;
+    display: none;
 }
