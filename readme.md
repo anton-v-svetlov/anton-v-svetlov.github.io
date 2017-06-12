@@ -72,6 +72,8 @@ Used small icons https://github.com/edent/SuperTinySocialIcons
 Сделать:
 ---
 
+Link to http://zakajimebel.by/ and other friends in field.
+
 Рамочки картинок в галерее как в вики
 
 Разделить главы более видимо.
