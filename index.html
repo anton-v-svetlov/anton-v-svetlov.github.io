@@ -282,14 +282,18 @@
       </div>
     </div>
     <div>
-      <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com" >
+      <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com">
         <div>
           <label for="name">Ваше Имя:</label>
           <input type="text" name="name">
         </div>
         <div>
-          <label for="_replyto">Телефон:</label>
-          <input type="tel" name="_replyto">
+          <label for="tel">Телефон:</label>
+          <input type="tel" name="_subject">
+        </div>
+        <div style="display: none">
+          <input type="email" name="_replyto" value="anton.v.svetlov@gmail.com">
+          <input type="email" name="_next" value="http://www.anton-v-svetlov.by/">
         </div>
         <input type="submit" value="Позвоните мне">
       </form>
