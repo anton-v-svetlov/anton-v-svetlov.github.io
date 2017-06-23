@@ -48,7 +48,7 @@ div[itemprop="funder"] > div  > div
 div[itemprop="funder"] > div  > div > img
 {
     max-width: 160px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 div[itemprop="funder"] > div  > div > img:first-child {

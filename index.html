@@ -14,16 +14,19 @@
   <title>Мебель на заказ. От идеи до монтажа.</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
 
   <div itemscope itemtype="http://schema.org/Organization">
-    <div style="background:rgba(0,0,0,0.3); text-align: center;  ">
-      <a href="http://zakajimebel.by/" onclick="trackOutboundLink('http://zakajimebel.by/'); return false;">
-      <img src="images/social/zakajimebel.png" width="323" height="50" alt="Закажи Мебель" />
-      </a>
-    </div>
+    <a href="http://zakajimebel.by/" onclick="trackOutboundLink('http://zakajimebel.by/'); return false;">
+      <div style="background:rgba(0,0,0,0.3); text-align: center;  display: flex;    overflow: auto;    justify-content: center;    align-items: center;    flex-wrap: wrap; ">
+        <img src="images/favicon.png" width="100" height="80" alt="ZakajiMebel.by" />
+        <h2>ZakajiMebel.by</h2>
+      </div>
+    </a>
     <h2 itemprop="name">Проектирование, изготовление, сборка, монтаж мебели и деревянных изделий.</h2>
     <meta itemprop="email" content="anton.v.svetlov@gmail.com" />
     <meta itemprop="telephone" content="+375336009949" />
@@ -46,7 +49,7 @@
               <img src="images/social/mts.svg" class="icon" alt="МТС Беларусь" />
             </a>
             <a href="viber://add?number=375336009949"><img src="images/social/viber.svg" class="icon" alt="Viber" /></a>
-            <a href="skype:a.v.svetlov81?call"><img src="images/social/skype.svg" class="icon" alt="Skype" /></a>
+            <a href="skype:a.v.svetlov81?chat"><img src="images/social/skype.svg" class="icon" alt="Skype" /></a>
             <a href="whatsapp://send?text=Мебель!&phone=+375336009949"><img src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" /></a>
           </div>
           <div>
@@ -276,14 +279,20 @@
             </a>
           </p>
         </div>
-        <div>
-          <p>
-            <a href="https://www.flickr.com/people/anton-v-svetlov/">
-              <img src="images/social/flickr.svg" alt="Flickr" />
-            </a>
-          </p>
-        </div>
       </div>
+    </div>
+    <div>
+      <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com" >
+        <div>
+          <label for="name">Ваше Имя:</label>
+          <input type="text" name="name">
+        </div>
+        <div>
+          <label for="_replyto">Телефон:</label>
+          <input type="tel" name="_replyto">
+        </div>
+        <input type="submit" value="Позвоните мне">
+      </form>
     </div>
   </div>
 
