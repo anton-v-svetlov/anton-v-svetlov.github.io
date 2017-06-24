@@ -22,7 +22,7 @@
 
   <div itemscope itemtype="http://schema.org/Organization">
     <a href="http://zakajimebel.by/" onclick="trackOutboundLink('http://zakajimebel.by/'); return false;">
-      <div style="background:rgba(0,0,0,0.3); text-align: center;  display: flex;    overflow: auto;    justify-content: center;    align-items: center;    flex-wrap: wrap; ">
+      <div style="background:rgba(0,0,0,0.3); text-align: center;  display: flex;    overflow: auto;   vertical-align: middle;   justify-content: center;    align-items: center;    flex-wrap: wrap; ">
         <img src="images/favicon.png" width="100" height="80" alt="ZakajiMebel.by" />
         <h2>ZakajiMebel.by</h2>
       </div>
@@ -50,7 +50,7 @@
             </a>
             <a href="viber://add?number=375336009949"><img src="images/social/viber.svg" class="icon" alt="Viber" /></a>
             <a href="skype:a.v.svetlov81?chat"><img src="images/social/skype.svg" class="icon" alt="Skype" /></a>
-            <a href="whatsapp://send?text=Мебель!&phone=+375336009949"><img src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" /></a>
+            <a href="whatsapp://send?text=Мебель!&amp;phone=+375336009949"><img src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" /></a>
           </div>
           <div>
             <a href="tel:+375291221599">
@@ -283,24 +283,34 @@
     </div>
 
     <div>
-      <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com">
-        <input type="text" name="name" placeholder="Ваше Имя">
-        <input type="tel" name="_subject" placeholder="Ваш Телефон">
-        <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним">
-        <input type="submit" value="Позвоните мне">
-      </form>
+      <h3>
+        <a href="#ОбратнаяСвязь" aria-hidden="true"></a> Обратная связь
+      </h3>
+      <div>
+        <div>
+          <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com">
+            <input type="text" name="name" placeholder="Ваше Имя"> <br/>
+            <input type="tel" name="_subject" placeholder="Ваш Телефон"><br/>
+            <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним">
+            <input type="submit" value="Перезвоните">
+          </form>
+        </div>
+
+        <div id="fb-root"></div>
+        <script>
+          (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="fb-like" data-href="http://www.anton-v-svetlov.by/" data-layout="standard" data-action="like" data-size="small"
+          data-show-faces="true" data-share="true"></div>
+      </div>
     </div>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like" data-href="http://www.anton-v-svetlov.by/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
   </div>
 
