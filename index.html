@@ -44,22 +44,30 @@
         </div>
         <div>
           <div>
-            <a href="tel:+375336009949">
+            <a href="tel:+375336009949" onclick="trackOutboundLink('tel:+375336009949'); return false;">
               <span itemprop="telephone">+375336009949</span>
               <img src="images/social/mts.svg" class="icon" alt="МТС Беларусь" />
             </a>
-            <a href="viber://add?number=375336009949"><img src="images/social/viber.svg" class="icon" alt="Viber" /></a>
-            <a href="skype:a.v.svetlov81?chat"><img src="images/social/skype.svg" class="icon" alt="Skype" /></a>
-            <a href="whatsapp://send?text=Мебель!&amp;phone=+375336009949"><img src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" /></a>
+            <a href="viber://add?number=375336009949" onclick="trackOutboundLink('viber://add?number=375336009949'); return false;">
+              <img src="images/social/viber.svg" class="icon" alt="Viber" />
+            </a>
+            <a href="skype:a.v.svetlov81?chat" onclick="trackOutboundLink('skype:a.v.svetlov81?chat'); return false;">
+              <img src="images/social/skype.svg" class="icon" alt="Skype" />
+            </a>
+            <a href="whatsapp://send?phone=+375336009949" onclick="trackOutboundLink('whatsapp://send?phone=+375336009949'); return false;">
+              <img src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" />
+            </a>
           </div>
           <div>
-            <a href="tel:+375291221599">
+            <a href="tel:+375291221599" onclick="trackOutboundLink('tel:+375291221599'); return false;">
               <span itemprop="telephone">+375291221599</span>
               <img src="images/social/velcom.ico" class="icon" alt="Velcom Беларусь" />
             </a>
           </div>
           <div>
-            <a href="mailto:anton.v.svetlov@gmail.com"><span itemprop="email">anton.v.svetlov@gmail.com</span></a>
+            <a href="mailto:anton.v.svetlov@gmail.com" onclick="trackOutboundLink('mailto:anton.v.svetlov@gmail.com'); return false;">
+              <span itemprop="email">anton.v.svetlov@gmail.com</span>
+            </a>
           </div>
         </div>
       </div>
@@ -292,12 +300,12 @@
             <input type="text" name="name" placeholder="Ваше Имя"> <br/>
             <input type="tel" name="_subject" placeholder="Ваш Телефон"><br/>
             <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним">
-            <input type="submit" value="Перезвоните">
+            <input type="submit" value="Перезвонить">
           </form>
         </div>
         <div style="width:100%">
           <div id="fb-root"></div>
-          <script>
+          <script async>
             (function (d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0];
               if (d.getElementById(id)) return;
