@@ -28,10 +28,6 @@
       }
     }
 
-    span[itemprop="email"] {
-      margin: 16pt;
-    }
-
     .center {
       margin: auto;
       width: 59%;
@@ -167,28 +163,47 @@
           <div>
             <a href="tel:+375336009949" onclick="trackOutboundLink('tel:+375336009949'); return false;">
               <span itemprop="telephone">+375336009949</span>
-              <img width="16" height="16" src="images/social/mts.svg" class="icon" alt="МТС Беларусь" />
+              <img width="16" height="16" src="images/social/mts.svg"  alt="МТС Беларусь" />
             </a>
             <a href="viber://add?number=+375336009949" onclick="trackOutboundLink('viber://add?number=375336009949'); return false;">
-              <img  width="16" height="16" src="images/social/viber.svg" class="icon" alt="Viber" />
+              <img  width="16" height="16" src="images/social/viber.svg"  alt="Viber" />
             </a>
-            <a href="skype:a.v.svetlov81?chat" onclick="trackOutboundLink('skype:a.v.svetlov81?chat'); return false;">
-              <img  width="16" height="16" src="images/social/skype.svg" class="icon" alt="Skype" />
-            </a>
+
             <a href="whatsapp://send?phone=+375336009949" onclick="trackOutboundLink('whatsapp://send?phone=+375336009949'); return false;">
-              <img  width="16" height="16" src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" />
+              <img  width="16" height="16" src="images/social/whatsapp.svg"  alt="WhatsApp" />
             </a>
           </div>
+
+          <div>
+            <a href="skype:a.v.svetlov81?chat" onclick="trackOutboundLink('skype:a.v.svetlov81?chat'); return false;">
+              a.v.svetlov81 <img  width="16" height="16" src="images/social/skype.svg" alt="Skype" />
+            </a>
+          </div>
+
           <div>
             <a href="tel:+375291221599" onclick="trackOutboundLink('tel:+375291221599'); return false;">
               <span itemprop="telephone">+375291221599</span>
-              <img  width="16" height="16" src="images/social/velcom.ico" class="icon" alt="Velcom Беларусь" />
+              <img  width="16" height="16" src="images/social/velcom.ico" alt="Velcom Беларусь" />
             </a>
           </div>
           <div>
             <a href="mailto:anton.v.svetlov@gmail.com" onclick="trackOutboundLink('mailto:anton.v.svetlov@gmail.com'); return false;">
               <span itemprop="email">anton.v.svetlov@gmail.com</span>
+              <img  width="16" height="16" src="images/social/email.svg"  />
             </a>
+          </div>
+           <br/>
+          <div>
+            <a onclick="document.getElementById('callbackForm').style.display='initial'">Перезвоните</a>
+            <div id="callbackForm" style="display:none">
+              <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com">
+                <input type="text" name="name" placeholder="Ваше Имя"/>
+                <input type="tel" name="_subject" placeholder="Ваш телефон"/>
+                <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним"/>  <br/>
+                <textarea  name="_body" placeholder="Ваше сообщение"></textarea> <br/>
+                <input type="submit" value="Перезвонить"/>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -196,8 +211,8 @@
 
     <div>
       <div>
-        В сфере мебельного производства с 2005 года. Делаю любую мебель из массива, ДСП, и других материалов. Мебель
-        для дома, офиса и производств.
+        В сфере мебельного производства с 2005 года. Делаю любую мебель из массива, ДСП, и других материалов. Мебель для дома, офиса
+        и производств.
 
         <span itemprop="areaServed" itemscope itemtype="http://schema.org/Place">
         <meta itemprop="telephone" content="+375336009949" />
@@ -233,7 +248,7 @@
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
             <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
               <span itemprop="name">Осуществление замеров, проектирование мебели, аранжировка интерьеров в программе <a href="http://ru.pro100.eu/pro100">PRO100</a></span>.
-              <span itemprop="name">Разработка карт распила/листа-раскроя в <a href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a></span>
+            <span itemprop="name">Разработка карт распила/листа-раскроя в <a href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a></span>
             </span>
           </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
@@ -398,18 +413,7 @@
     </div>
 
     <div>
-      <h3>
-        <a href="#ОбратнаяСвязь" aria-hidden="true"></a> Обратная связь
-      </h3>
       <div style="text-align: center;  display: flex;    overflow: auto;   vertical-align: middle;   justify-content: center;    align-items: center;    flex-wrap: wrap;">
-        <div>
-          <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com">
-            <input type="text" name="name" placeholder="Ваше Имя"> <br/>
-            <input type="tel" name="_subject" placeholder="Ваш Телефон"><br/>
-            <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним">
-            <input type="submit" value="Перезвонить">
-          </form>
-        </div>
         <div style="width:100%">
           <div id="fb-root"></div>
           <script async>
