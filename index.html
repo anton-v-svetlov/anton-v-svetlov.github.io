@@ -15,17 +15,133 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <style>
+    div[itemtype="http://schema.org/Organization"] {
+      width: 860px;
+      margin: 0 auto;
+    }
 
+    @media print,
+    screen and (max-width: 960px) {
+      div[itemtype="http://schema.org/Organization"] {
+        width: auto;
+      }
+    }
+
+    span[itemprop="email"] {
+      margin: 16pt;
+    }
+
+    .center {
+      margin: auto;
+      width: 59%;
+    }
+
+    .leftCentered {
+      float: left;
+      align-content: center;
+      width: 50%;
+      text-align: center;
+    }
+
+    div[itemprop="funder"]>div {
+      display: flex;
+      overflow: auto;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    div[itemprop="funder"]>div>div {
+      position: relative;
+    }
+
+    div[itemprop="funder"]>div>div>img {
+      max-width: 160px;
+      border-radius: 4px;
+    }
+
+    div[itemprop="funder"]>div>div>img:first-child {
+      position: absolute;
+      animation-name: funderPhotosAnimation;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 16s;
+    }
+
+
+    @keyframes funderPhotosAnimation {
+      0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      overflow: auto;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .gallery div a {
+      float: left;
+      text-align: center
+    }
+
+    div.gallery div a span {
+      text-align: center;
+      display: block;
+    }
+
+    @media screen and (max-width: 540px) {
+      div.gallery div img {
+        width: 50%;
+        height: 50%;
+        border-radius: 2px;
+      }
+    }
+
+    @media screen and (min-width: 540px) {
+      div.gallery div img {
+        width: 128px;
+        border-radius: 2px;
+      }
+    }
+
+    img[width="16"][height="16"] {
+      margin: 2px;
+    }
+
+    .iconFooter {
+      font-size: smaller;
+      display: flex;
+      overflow: auto;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 
 <body>
-
   <div itemscope itemtype="http://schema.org/Organization">
 
-    <div style="text-align: center;  display: flex;    overflow: auto;   vertical-align: middle;   justify-content: center;    align-items: center;    flex-wrap: wrap; ">
-      <!--<img src="images/logo.svg" width="64" height="64" />-->
-      <div>
-        <h2>Мебель под заказ. <br/> От идеи до монтажа.</h2>
+    <div style=" width: 100%; text-align: center;  display: flex;    overflow: auto;   vertical-align: middle;   justify-content: center;    align-items: center;    flex-wrap: wrap; ">
+      <div style="background: #272727;">
+        <h2 style="color: wheat">Мебель под заказ. От идеи до монтажа.</h2>
       </div>
     </div>
     <meta itemprop="name" content="Мебель под заказ. От идеи до монтажа." />
@@ -51,22 +167,22 @@
           <div>
             <a href="tel:+375336009949" onclick="trackOutboundLink('tel:+375336009949'); return false;">
               <span itemprop="telephone">+375336009949</span>
-              <img src="images/social/mts.svg" class="icon" alt="МТС Беларусь" />
+              <img width="16" height="16" src="images/social/mts.svg" class="icon" alt="МТС Беларусь" />
             </a>
             <a href="viber://add?number=+375336009949" onclick="trackOutboundLink('viber://add?number=375336009949'); return false;">
-              <img src="images/social/viber.svg" class="icon" alt="Viber" />
+              <img  width="16" height="16" src="images/social/viber.svg" class="icon" alt="Viber" />
             </a>
             <a href="skype:a.v.svetlov81?chat" onclick="trackOutboundLink('skype:a.v.svetlov81?chat'); return false;">
-              <img src="images/social/skype.svg" class="icon" alt="Skype" />
+              <img  width="16" height="16" src="images/social/skype.svg" class="icon" alt="Skype" />
             </a>
             <a href="whatsapp://send?phone=+375336009949" onclick="trackOutboundLink('whatsapp://send?phone=+375336009949'); return false;">
-              <img src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" />
+              <img  width="16" height="16" src="images/social/whatsapp.svg" class="icon" alt="WhatsApp" />
             </a>
           </div>
           <div>
             <a href="tel:+375291221599" onclick="trackOutboundLink('tel:+375291221599'); return false;">
               <span itemprop="telephone">+375291221599</span>
-              <img src="images/social/velcom.ico" class="icon" alt="Velcom Беларусь" />
+              <img  width="16" height="16" src="images/social/velcom.ico" class="icon" alt="Velcom Беларусь" />
             </a>
           </div>
           <div>
@@ -79,28 +195,31 @@
     </div>
 
     <div>
-      <p>
-        В сфере мебельного производства с 2005 года. Делать всё, что касается мебели из ДСП, массива и других материалов. Мебель
+      <div>
+        В сфере мебельного производства с 2005 года. Делаю любую мебель из массива, ДСП, и других материалов. Мебель
         для дома, офиса и производств.
-      </p>
 
-      <div itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+        <span itemprop="areaServed" itemscope itemtype="http://schema.org/Place">
+        <meta itemprop="telephone" content="+375336009949" />
+        <meta itemprop="name" content="Минск" /> Работаю
+        <span itemprop="address">Минск</span>е,
+        <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCircle">
+        <span itemprop="geoMidpoint" itemscope itemtype="http://schema.org/GeoCoordinates">
+          <meta itemprop="latitude" content="53.90" />
+          <meta itemprop="longitude" content="27.56" />
+        </span>
+        <meta itemprop="geoRadius" content="50000" />
+        </span> Минском районе, д. Боровляны, г. Заславль.
+        </span>
+      </div>
+
+      <div style="background: #fff8cb; color: #733B12" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
         <div>
-          <h3>
+          <h3 style="color: #733B12">
             <a href="#works" aria-hidden="true"></a>Виды и Примеры Работ
           </h3>
         </div>
         <ul>
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Весь цикл производства мебели - от идеи до монтажа.</span>
-            </span>
-          </li>
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Осуществление замеров, проектирование мебели, аранжировка интерьеров в программе <a href="http://ru.pro100.eu/pro100">PRO100</a></span>
-            </span>
-          </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
             <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
               <span itemprop="name">Производство, сборка и установка любой мебели</span>
@@ -113,83 +232,75 @@
           </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
             <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Мебель из массива, мебель под заказ</span>
-            </span>
-          </li>
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Кухни, шкафы-купе, встроенная и корпусная мебель</span>
-            </span>
-          </li>
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
-            <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+              <span itemprop="name">Осуществление замеров, проектирование мебели, аранжировка интерьеров в программе <a href="http://ru.pro100.eu/pro100">PRO100</a></span>.
               <span itemprop="name">Разработка карт распила/листа-раскроя в <a href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a></span>
             </span>
           </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
             <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Монтаж встроенной бытовой техники</span>
+              <span itemprop="name">Встроенная мебель и монтаж встроенной бытовой техники.</span>
             </span>
           </li>
         </ul>
-      </div>
-
-      <div class="gallery">
-        <div>
-          <a href="massiv.html">
+        <div class="gallery">
+          <div>
+            <a href="massiv.html">
             <img src="images/gallery/massiv.jpg" alt="Мебель из массива" width="150" height="112" />
             <span>Массив</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/ojWZjmRGdRMpzX7v7">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/ojWZjmRGdRMpzX7v7">
             <img src="images/gallery/кухни.jpg" alt="Кухни" width="150" height="112"/>
             <span>Кухни</span>
           </a>
-        </div>
-        <div>
-          <a href="detskaya.html">
+          </div>
+          <div>
+            <a href="detskaya.html">
             <img src="images/gallery/detskaya.jpg" alt="Детская мебель" width="150" height="112"/>
             <span>Детская</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/Fwb8kbTYTzHYVj9m8">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/Fwb8kbTYTzHYVj9m8">
             <img src="images/gallery/shkaf_kupe.jpg" alt="Шкафы купе" width="150" height="112"/>
             <span>Шкафы купе</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/piaGZh4nHu9CS3AH6">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/piaGZh4nHu9CS3AH6">
             <img src="images/gallery/korpusnaya.jpg" alt="Корпусная мебель" width="150" height="112"/>
             <span>Корпусная</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/k364ipcKEZv4tpDm8">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/k364ipcKEZv4tpDm8">
             <img src="images/gallery/производственная-мебель.jpg" alt="Производственная мебель" width="150" height="112"/>
             <span>Производство</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/xDVF9udYaETN2ysJA">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/xDVF9udYaETN2ysJA">
             <img src="images/gallery/офисная-мебель-значок.jpg" alt="Офисная мебель" width="150" height="112"/>
             <span>Офисная</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/UspNhyYCaJEguLMc6">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/UspNhyYCaJEguLMc6">
             <img src="images/gallery/торговое-оборудование-значок.jpg" alt="Торговое оборудование" width="150" height="112"/>
             <span>Торговая</span>
           </a>
-        </div>
-        <div>
-          <a href="https://goo.gl/photos/vzuUCv2tUm67hvi6A">
+          </div>
+          <div>
+            <a href="https://goo.gl/photos/vzuUCv2tUm67hvi6A">
             <img src="images/gallery/проектирование-карты-распила-раскроя-значок.jpg" alt="Проектирование" width="150" height="112"/>
             <span>Проектирование</span>
           </a>
+          </div>
         </div>
       </div>
+
+
 
       <h3>
         <a href="#prof" aria-hidden="true"></a>Профессиональная область
@@ -199,27 +310,12 @@
         столяр.
       </p>
 
-      <div itemprop="areaServed" itemscope itemtype="http://schema.org/Place">
-        <meta itemprop="telephone" content="+375336009949" />
-        <meta itemprop="name" content="Минск" />
-        <h3>
-          <a href="#Где_работаю" aria-hidden="true"></a> Где работаю
-        </h3>
 
-        <span itemprop="address">Минск</span>,
-        <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCircle">
-        <span itemprop="geoMidpoint" itemscope itemtype="http://schema.org/GeoCoordinates">
-          <meta itemprop="latitude" content="53.90" />
-          <meta itemprop="longitude" content="27.56" />
-        </span>
-        <meta itemprop="geoRadius" content="50000" />
-        </span> Минский Район, д. Боровляны, г. Заславль
-      </div>
       <div>
 
         <div>
           <h3>
-            <a href="#Инструмент_оборудование"></a> Инструмент, оборудование
+            <a href="#ИнструментОборудованиеМатериалы"></a> Инструмент, оборудование, материалы
           </h3>
         </div>
 
@@ -242,46 +338,46 @@
         <div>
           <p>
             <a href="https://www.facebook.com/profile.php?id=100015332536903">
-              <img src="images/social/facebook.svg" alt="Facebook" />
+              <img src="images/social/facebook.svg"  width="16" height="16" alt="Facebook" />
             </a>
           </p>
         </div>
         <div>
           <p>
             <a href="http://jobs.tut.by/resume/a531065aff02df74390039ed1f336630637461">
-            <img src="images/social/tutby.png" alt="Работа TUT.BY" /></a>
+            <img src="images/social/tutby.png"  width="16" height="16" alt="Работа TUT.BY" /></a>
           </p>
         </div>
         <div>
           <p>
             <a href="https://www.ok.ru/anton.v.svetlov">
-            <img src="images/social/ok.png" alt="Одноклассники" /></a>
+            <img src="images/social/ok.png"  width="16" height="16" alt="Одноклассники" /></a>
           </p>
         </div>
         <div>
           <p>
             <a href="https://vk.com/anton_v_svetlov">
-              <img src="images/social/vk.svg" alt="ВКонтакте" />
+              <img src="images/social/vk.svg"  width="16" height="16" alt="ВКонтакте" />
             </a>
           </p>
         </div>
         <div>
           <p>
             <a href="https://www.etsy.com/ru/people/antonsvetlov1981">
-            <img src="images/social/etsy.ico" alt="Etsy" /></a>
+            <img src="images/social/etsy.ico"  width="16" height="16" alt="Etsy" /></a>
           </p>
         </div>
         <div>
           <p>
             <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B2-326329112/">
-              <img src="images/social/linkedin.svg" alt="LinkedIn" />
+              <img src="images/social/linkedin.svg"  width="16" height="16" alt="LinkedIn" />
             </a>
           </p>
         </div>
         <div>
           <p>
             <a href="https://www.instagram.com/antonsvetlov1981/">
-              <img src="images/social/instagram.svg" alt="Instagram" />
+              <img src="images/social/instagram.svg" width="16" height="16" alt="Instagram" />
             </a>
           </p>
         </div>
