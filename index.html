@@ -28,18 +28,6 @@
       }
     }
 
-    .center {
-      margin: auto;
-      width: 59%;
-    }
-
-    .leftCentered {
-      float: left;
-      align-content: center;
-      width: 50%;
-      text-align: center;
-    }
-
     div[itemprop="funder"]>div {
       display: flex;
       overflow: auto;
@@ -121,7 +109,7 @@
       margin: 2px;
     }
 
-    .iconFooter {
+    div[itemtype="http://schema.org/ItemList"] {
       font-size: smaller;
       display: flex;
       overflow: auto;
@@ -130,6 +118,8 @@
       flex-wrap: wrap;
     }
   </style>
+
+  <script async type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 
 <body>
@@ -192,16 +182,18 @@
               <img  width="16" height="16" src="images/social/email.svg"  />
             </a>
           </div>
-           <br/>
           <div>
-            <a onclick="document.getElementById('callbackForm').style.display='initial'">Перезвоните</a>
+            <a onclick="document.getElementById('callbackForm').style.display='initial'">
+              <strong>Обратный Звонок</strong>
+              <img  width="16" height="16" src="images/social/phone.svg"  />
+            </a>
             <div id="callbackForm" style="display:none">
               <form method="POST" action="https://formspree.io/anton.v.svetlov@gmail.com">
-                <input type="text" name="name" placeholder="Ваше Имя"/>
-                <input type="tel" name="_subject" placeholder="Ваш телефон"/>
-                <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним"/>  <br/>
-                <textarea  name="_body" placeholder="Ваше сообщение"></textarea> <br/>
-                <input type="submit" value="Перезвонить"/>
+                <input type="text" name="name" placeholder="Ваше Имя" />
+                <input type="tel" name="_subject" placeholder="Ваш телефон" />
+                <input type="text" style="display: none" type="hidden" name="_next" value="http://www.anton-v-svetlov.by/#Перезвоним" />                <br/>
+                <textarea name="_body" placeholder="Ваше сообщение"></textarea> <br/>
+                <input type="submit" value="Перезвонить" />
               </form>
             </div>
           </div>
@@ -327,7 +319,6 @@
 
 
       <div>
-
         <div>
           <h3>
             <a href="#ИнструментОборудованиеМатериалы"></a> Инструмент, оборудование, материалы
@@ -340,7 +331,7 @@
         </p>
       </div>
 
-      <div class="iconFooter">
+      <div itemscope itemtype="http://schema.org/ItemList">
         <h3>
           <a href="#Дополнительно" aria-hidden="true"></a> Дополнительно
         </h3>
@@ -429,6 +420,9 @@
           <div class="fb-like" data-href="http://www.anton-v-svetlov.by/" data-layout="standard" data-action="like" data-size="small"
             data-show-faces="false" data-share="true"></div>
         </div>
+        <script type="text/javascript">
+          document.write(VK.Share.button());
+        </script>
       </div>
     </div>
 

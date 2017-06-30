@@ -1,6 +1,6 @@
 body {
     background-color:#fff;
-    padding: 50px;
+    padding: 32pt;
     font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #727272;
     font-weight: 400;
@@ -22,7 +22,7 @@ h3,
 h2,
 h1 {
     text-align: center;
-    margin-top: 32pt;
+    padding: 16pt 8pt 0pt 8pt ;
 }
 
 h1,
@@ -74,7 +74,7 @@ screen and (max-width: 720px) {
 @media print,
 screen and (max-width: 480px) {
     body {
-        padding: 15px;
+        padding: 4pt;
     }
     header ul {
         width: 99%;
