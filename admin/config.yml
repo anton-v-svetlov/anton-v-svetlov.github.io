@@ -18,12 +18,13 @@ collections:
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text"}
-      - {label: "Фотография1", name: "photo", widget: "image"}
-      - {label: "Фотография2", name: "photo", widget: "image"}	
-      - {label: "Фотография3", name: "photo", widget: "image"}		  
-      - {label: "Фотография4", name: "photo", widget: "image"}		  
-      - {label: "Фотография5", name: "photo", widget: "image"}	  
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Фотография1", name: "photo1", widget: "image"}
+      - {label: "Фотография2", name: "photo2", widget: "image", required: false}	
+      - {label: "Фотография3", name: "photo3", widget: "image", required: false}		  
+      - {label: "Фотография4", name: "photo4", widget: "image", required: false}		  
+      - {label: "Фотография5", name: "photo5", widget: "image", required: false}	  
+      - {label: "Фотография6", name: "photo6", widget: "image", required: false}	  
 
   - name: "kuhni" 
     label: "Кухни"
@@ -32,12 +33,13 @@ collections:
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text"}
-      - {label: "Фотография1", name: "photo", widget: "image"}
-      - {label: "Фотография2", name: "photo", widget: "image"}	
-      - {label: "Фотография3", name: "photo", widget: "image"}		  
-      - {label: "Фотография4", name: "photo", widget: "image"}		  
-      - {label: "Фотография5", name: "photo", widget: "image"}	 
+      - {label: "Длинное описание", name: "body", widget: "text"}, required: false}
+      - {label: "Фотография1", name: "photo1", widget: "image"}
+      - {label: "Фотография2", name: "photo2", widget: "image", required: false}	
+      - {label: "Фотография3", name: "photo3", widget: "image", required: false}		  
+      - {label: "Фотография4", name: "photo4", widget: "image", required: false}		  
+      - {label: "Фотография5", name: "photo5", widget: "image", required: false}	 
+      - {label: "Фотография6", name: "photo6", widget: "image", required: false}	        
 	  
   - name: "shkaf_kupe" 
     label: "Шкафы купе"
@@ -46,9 +48,10 @@ collections:
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text"}
-      - {label: "Фотография1", name: "photo", widget: "image"}
-      - {label: "Фотография2", name: "photo", widget: "image"}	
-      - {label: "Фотография3", name: "photo", widget: "image"}		  
-      - {label: "Фотография4", name: "photo", widget: "image"}		  
-      - {label: "Фотография5", name: "photo", widget: "image"}	
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Фотография1", name: "photo1", widget: "image"}
+      - {label: "Фотография2", name: "photo2", widget: "image", required: false}	
+      - {label: "Фотография3", name: "photo3", widget: "image", required: false}		  
+      - {label: "Фотография4", name: "photo4", widget: "image", required: false}		  
+      - {label: "Фотография5", name: "photo5", widget: "image", required: false}	
+      - {label: "Фотография6", name: "photo6", widget: "image", required: false}	        
