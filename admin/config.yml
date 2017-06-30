@@ -19,8 +19,11 @@ collections:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text"}
-      - {label: "Фотография", name: "photo", widget: "image"}
-      - {label: "asd", name: "qweqqw", widget: "select"}
+      - {label: "Фотография1", name: "photo", widget: "image"}
+      - {label: "Фотография2", name: "photo", widget: "image"}	
+      - {label: "Фотография3", name: "photo", widget: "image"}		  
+      - {label: "Фотография4", name: "photo", widget: "image"}		  
+      - {label: "Фотография5", name: "photo", widget: "image"}	  
 
   - name: "kuhni" 
     label: "Кухни"
@@ -30,4 +33,22 @@ collections:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text"}
-      - {label: "Фотография", name: "photo", widget: "image"}	  
+      - {label: "Фотография1", name: "photo", widget: "image"}
+      - {label: "Фотография2", name: "photo", widget: "image"}	
+      - {label: "Фотография3", name: "photo", widget: "image"}		  
+      - {label: "Фотография4", name: "photo", widget: "image"}		  
+      - {label: "Фотография5", name: "photo", widget: "image"}	 
+	  
+  - name: "shkaf_kupe" 
+    label: "Шкафы купе"
+    folder: "сontent/shkaf_kupe"
+    create: true
+    fields:
+      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Короткое описание", name: "description", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text"}
+      - {label: "Фотография1", name: "photo", widget: "image"}
+      - {label: "Фотография2", name: "photo", widget: "image"}	
+      - {label: "Фотография3", name: "photo", widget: "image"}		  
+      - {label: "Фотография4", name: "photo", widget: "image"}		  
+      - {label: "Фотография5", name: "photo", widget: "image"}	
