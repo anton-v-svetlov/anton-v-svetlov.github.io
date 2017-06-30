@@ -118,8 +118,6 @@
       flex-wrap: wrap;
     }
   </style>
-
-  <script async type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 
 <body>
@@ -413,6 +411,7 @@
               if (d.getElementById(id)) return;
               js = d.createElement(s); js.id = id;
               js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+              js.async = true;
               fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
           </script>
@@ -420,9 +419,17 @@
           <div class="fb-like" data-href="http://www.anton-v-svetlov.by/" data-layout="standard" data-action="like" data-size="small"
             data-show-faces="false" data-share="true"></div>
         </div>
+        <div class="my_VK_button_outer">
+          <span class="my_VK_button_inner" id="my_VK_button"></span>
+        </div>
         <script type="text/javascript">
-          document.write(VK.Share.button());
+          function show_VK_button() {
+            if (window.VK) {
+              document.getElementById("my_VK_button").innerHTML = VK.Share.button();
+            }
+          }
         </script>
+        <script async type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251" onload="show_VK_button()"></script>
       </div>
     </div>
 
