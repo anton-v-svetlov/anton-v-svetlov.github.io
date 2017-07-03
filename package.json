@@ -8,7 +8,8 @@
 		"node" : ">=1.1"
 	},
     "scripts" : {
-		"lahoda" : "lahoda"
+		"lahoda" : "lahoda",
+		"lahoda2" : "git status"
 	},
 	"dependencies" : {
 		"jimp" : "0.2.27",
