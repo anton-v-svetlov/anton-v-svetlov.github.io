@@ -9,7 +9,7 @@
 	},
     "scripts" : {
 		"lahoda" : "lahoda",
-		"lahoda2" : "git status"
+		"lahoda2" : "npm"
 	},
 	"dependencies" : {
 		"jimp" : "0.2.27",

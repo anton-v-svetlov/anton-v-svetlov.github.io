@@ -15,6 +15,9 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <style>
+    #Перезвоним:not(:target) {
+    display: none;
+    }
     div[itemtype="http://schema.org/Organization"] {
       width: 860px;
       margin: 0 auto;
@@ -110,7 +113,7 @@
     }
 
     img[width="16"][height="16"] {
-      margin: 2px;
+      margin: 4pt;
     }
 
     div[itemtype="http://schema.org/ItemList"] {
@@ -121,14 +124,30 @@
       align-items: center;
       flex-wrap: wrap;
     }
+     
+    .fiber 
+    {
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+     border-radius: 4px;
+    } 
+
   </style>
 </head>
 
 <body>
+  <div id="Перезвоним" style="text-align: center">Спасибо за сообщение. Мы свяжемся с вами.</div>
   <div itemscope itemtype="http://schema.org/Organization">
-
-    <div style=" background: #272727; width: 100%; text-align: center;  display: flex;    overflow: auto;   vertical-align: middle;   justify-content: center;    align-items: center;    flex-wrap: wrap; ">
-        <h2 style="color: wheat">Мебель под заказ. От идеи до монтажа.</h2>
+    <div class="fiber" style="width: 100%; text-align: center;  display: flex;    overflow: auto;   vertical-align: middle;   justify-content: center;    align-items: center;    flex-wrap: wrap; ">
+        <img src="images/favicon_gold.svg" height="64" />
+        <h2 style="color:  wheat ">Мебель под заказ. <p/> От идеи до монтажа.</h2>
     </div>
 
     <meta itemprop="name" content="Мебель под заказ. От идеи до монтажа." />
@@ -221,10 +240,10 @@
         </span>
       </section>
 
-      <div style="background: #fff8cb; color: #733B12" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+      <div class="fiber" style="color: wheat" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
         <div>
-          <h3 style="color: #733B12">
-            <a href="#works" aria-hidden="true"></a>Виды и Примеры Работ
+          <h3 style="color: wheat">
+            <a href="#works" aria-hidden="true"></a>Виды и примеры Работ
           </h3>
         </div>
         <ul>
@@ -240,8 +259,9 @@
           </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
             <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
-              <span itemprop="name">Осуществление замеров, проектирование мебели, аранжировка интерьеров в программе <a href="http://ru.pro100.eu/pro100">PRO100</a></span>.
-            <span itemprop="name">Разработка карт распила/листа-раскроя в <a href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a></span>
+              <span itemprop="name">Обсуждение идеи или эскиза, замеры, проектирование мебели, аранжировка интерьера, разработка карт распила и листа-раскроя
+            в <a  style="color: wheat; text-decoration: none;" href="http://bazissoft.ru/products/bazis_mebelschik">Базис-Мебельщик</a>
+            </span>
             </span>
           </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
@@ -252,55 +272,55 @@
         </ul>
         <div class="gallery">
           <div>
-            <a href="massiv.html">
+            <a style="color: wheat; text-decoration: none;"  href="massiv.html">
             <img src="images/gallery/massiv.jpg" alt="Мебель из массива" width="150" height="112" />
             <span>Массив</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/ojWZjmRGdRMpzX7v7">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/ojWZjmRGdRMpzX7v7">
             <img src="images/gallery/кухни.jpg" alt="Кухни" width="150" height="112"/>
             <span>Кухни</span>
           </a>
           </div>
           <div>
-            <a href="detskaya.html">
+            <a style="color: wheat; text-decoration: none;"  style="color: wheat; text-decoration: none;"  href="detskaya.html">
             <img src="images/gallery/detskaya.jpg" alt="Детская мебель" width="150" height="112"/>
             <span>Детская</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/Fwb8kbTYTzHYVj9m8">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/Fwb8kbTYTzHYVj9m8">
             <img src="images/gallery/shkaf_kupe.jpg" alt="Шкафы купе" width="150" height="112"/>
             <span>Шкафы купе</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/piaGZh4nHu9CS3AH6">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/piaGZh4nHu9CS3AH6">
             <img src="images/gallery/korpusnaya.jpg" alt="Корпусная мебель" width="150" height="112"/>
             <span>Корпусная</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/k364ipcKEZv4tpDm8">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/k364ipcKEZv4tpDm8">
             <img src="images/gallery/производственная-мебель.jpg" alt="Производственная мебель" width="150" height="112"/>
             <span>Производство</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/xDVF9udYaETN2ysJA">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/xDVF9udYaETN2ysJA">
             <img src="images/gallery/офисная-мебель-значок.jpg" alt="Офисная мебель" width="150" height="112"/>
             <span>Офисная</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/UspNhyYCaJEguLMc6">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/UspNhyYCaJEguLMc6">
             <img src="images/gallery/торговое-оборудование-значок.jpg" alt="Торговое оборудование" width="150" height="112"/>
             <span>Торговая</span>
           </a>
           </div>
           <div>
-            <a href="https://goo.gl/photos/vzuUCv2tUm67hvi6A">
+            <a style="color: wheat; text-decoration: none;"  href="https://goo.gl/photos/vzuUCv2tUm67hvi6A">
             <img src="images/gallery/проектирование-карты-распила-раскроя-значок.jpg" alt="Проектирование" width="150" height="112"/>
             <span>Проектирование</span>
           </a>
@@ -337,35 +357,15 @@
           <a href="#Дополнительно" aria-hidden="true"></a> Дополнительно
         </h3>
         <p>
-          Родился в 1981 году, образование неконченное высшее. Служил, есть опыт вождения грузовиков в армии. Есть опыт работы сварщиком
+          Родился в 1981 году, образование неконченное высшее, служил. Права и опыт вождения грузовиков. Есть опыт работы сварщиком
           и высоковольтными линиями. Работал на фирмах: Фельтре, Эко-Мастер, Stanley. По договору работал и с другими фирмами.
           Базовые знания англиского языка.
         </p>
 
         <div>
           <p>
-            <a href="https://www.facebook.com/profile.php?id=100015332536903">
-              <img src="images/social/facebook.svg"  width="16" height="16" alt="Facebook" />
-            </a>
-          </p>
-        </div>
-        <div>
-          <p>
             <a href="http://jobs.tut.by/resume/a531065aff02df74390039ed1f336630637461">
             <img src="images/social/tutby.png"  width="16" height="16" alt="Работа TUT.BY" /></a>
-          </p>
-        </div>
-        <div>
-          <p>
-            <a href="https://www.ok.ru/anton.v.svetlov">
-            <img src="images/social/ok.png"  width="16" height="16" alt="Одноклассники" /></a>
-          </p>
-        </div>
-        <div>
-          <p>
-            <a href="https://vk.com/anton_v_svetlov">
-              <img src="images/social/vk.svg"  width="16" height="16" alt="ВКонтакте" />
-            </a>
           </p>
         </div>
         <div>
@@ -378,13 +378,6 @@
           <p>
             <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B2-326329112/">
               <img src="images/social/linkedin.svg"  width="16" height="16" alt="LinkedIn" />
-            </a>
-          </p>
-        </div>
-        <div>
-          <p>
-            <a href="https://www.instagram.com/antonsvetlov1981/">
-              <img src="images/social/instagram.svg" width="16" height="16" alt="Instagram" />
             </a>
           </p>
         </div>
@@ -433,6 +426,9 @@
           }
         </script>
         <script async type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251" onload="show_VK_button()"></script>
+      
+	<iframe  src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.anton-v-svetlov.by%2F&amp;send=true&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+
       </div>
     </div>
   </div>

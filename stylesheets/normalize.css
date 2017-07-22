@@ -2,7 +2,7 @@ body {
     background-color:#fff;
     padding: 32pt;
     font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #727272;
+    color: #424242;
     font-weight: 400;
 }
 
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #222;
+ 
     margin: 0 0 8px;
 }
 
@@ -33,17 +33,6 @@ h3 {
 
 h1 {
     font-size: 28pt;
-}
-
-h2 {
-    color: #393939;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    color: #494949;
 }
 
 a {
