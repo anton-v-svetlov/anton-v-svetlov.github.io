@@ -12,7 +12,7 @@ options:
 collections: 
   - name: "massiv" 
     label: "Изделия из массива дерева"
-    folder: "сontent/massiv"
+    folder: "content/massiv"
 
     create: true
     fields:
@@ -28,7 +28,7 @@ collections:
 
   - name: "kuhni" 
     label: "Кухни"
-    folder: "сontent/kuhni"
+    folder: "content/kuhni"
     create: true
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
@@ -43,7 +43,7 @@ collections:
 	  
   - name: "shkaf_kupe" 
     label: "Шкафы купе"
-    folder: "сontent/shkaf_kupe"
+    folder: "content/shkaf_kupe"
     create: true
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}

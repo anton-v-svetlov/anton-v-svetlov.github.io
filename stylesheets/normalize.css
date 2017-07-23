@@ -1,6 +1,6 @@
 body {
     background-color:#fff;
-    padding: 32pt;
+    padding: 0 0 4rem 0;
     font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #424242;
     font-weight: 400;
@@ -22,7 +22,7 @@ h3,
 h2,
 h1 {
     text-align: center;
-    padding: 16pt 8pt 0pt 8pt ;
+    padding: 1rem 8pt 0pt 8pt ;
 }
 
 h1,
@@ -32,7 +32,7 @@ h3 {
 }
 
 h1 {
-    font-size: 28pt;
+    font-size: 4rem;
 }
 
 a {
