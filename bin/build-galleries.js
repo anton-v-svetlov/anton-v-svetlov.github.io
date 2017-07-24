@@ -8,19 +8,16 @@ const path = require("path");
 const figure = "templates/item.template.html";
 const gallery = "templates/gallery.template.html";
 
-function Category(name) 
-{
-    return {name : name};
+function Category(name) {
+    return { name: name };
 }
 
-function CategoryView(category)
-{
-    return {model:category,title:"Шкафы купе", head : "Примеры шкафов купе", contentDescription: "Шкафы купе."};
+function CategoryView(category) {
+    return { model: category, title: "Шкафы купе", head: "Примеры шкафов купе", contentDescription: "Шкафы купе." };
 }
 
-function Content(category)
-{
-    return {textDir :"content/"+ category.name + "/", imagesDir : "./images/gallery/"+ category.name +"/"};
+function Content(category) {
+    return { textDir: "content/" + category.name + "/", imagesDir: "./images/gallery/" + category.name + "/" };
 }
 
 let category = new Category("shkaf_kupe");
@@ -31,44 +28,54 @@ let gl = fs.readFileSync(gallery, 'utf8');
 let allFlags = fs.readdirSync(content.textDir);
 
 let items = allFlags.map(x => {
-  let itemText = fs.readFileSync(content.textDir + x, 'utf8');
-  console.log(itemText);
-  let parsed = md.parse(itemText);
-  let title = parsed[2].children[0].content.split("title: ")[1];
-  let description = parsed[2].children[2].content.split("description: ")[1];
-  let photo1 = parsed[2].children[4].content.split("photo1: ")[1].replace("/im","im");
-  let body = parsed[5].children[0].content;
-  return {title : title, description : description, photo1 : photo1, body : body};
+    let itemText = fs.readFileSync(content.textDir + x, 'utf8');
+    let parsed = md.parse(itemText);
+    let title = parsed[2].children[0].content.split("title: ")[1];
+    let description = parsed[2].children[2].content.split("description: ")[1];
+    let photo1 = parsed[2].children[4].content.split("photo1: ")[1].replace("/im", "im");
+    let body = parsed[5].children[0].content;
+    return { title: title, description: description, photo1: photo1, body: body };
 });
 
-function transform(from,to) 
-{
-    let images = {};
-    console.log(from);
-    console.log(to);
-            jimp.read(from, function (err, img) {
-                if (err) throw err;
-                images.width = img.bitmap.width;
-                images.height = img.bitmap.height;
-                let thumb = img.scaleToFit(256, 256)
-                    .quality(60)
-                    .write(to);
-                 images.thumb_width = thumb.bitmap.width;
-                 images.thumb_height = thumb.bitmap.height;   
-            });
-    return images;
+function transform(from, to, fillImage) {
+    return jimp.read(from).then(img => {
+        let images = {};
+        images.width = img.bitmap.width;
+        images.height = img.bitmap.height;
+        let thumb = img.scaleToFit(256, 256)
+            .quality(60)
+            .write(to);
+        images.thumb_width = thumb.bitmap.width;
+        images.thumb_height = thumb.bitmap.height;
+        console.log(images);
+        return fillImage(images);
+    });
 }
 
-let templatedItems = items.map(x=> 
-{
+function fillImage(x, photo1_thumb, img) {
+    let model = {
+        'photo1': x.photo1, 'description': x.description, 'photo1_thumb': photo1_thumb.replace("./im", "im"), 'body': x.body,
+        'width': img.width, 'height': img.height, 'thumb_height': img.thumb_height, 'thumb_width': img.thumb_width
+    };
+    return _.template(fg)(model);
+}
+
+let templatedItems = items.map(x => {
     let basename = path.basename(x.photo1);
     let photo1_thumb = content.imagesDir + "thumb/" + basename;
-    let img = transform(x.photo1, photo1_thumb);
-    return _.template(fg)({'photo1' : x.photo1, "description": x.description, "photo1_thumb" : photo1_thumb.replace("./im","im"), "body" : x.body});
+    let qwe = (zzz) => fillImage(x, photo1_thumb, zzz);
+    console.log(qwe);
+    return transform(x.photo1, photo1_thumb, qwe);
+
 });
 
-let allBodies = templatedItems.join('\n');
+Promise.all(templatedItems)
+    .then(x => {
+        console.log(x);
+        var qe = x.join('\n');
 
-let r2 = _.template(gl)({"gallery": allBodies});
-fs.writeFile(category.name + ".html", r2, 'utf8');
+        let r2 = _.template(gl)({ "gallery": qe });
+        fs.writeFile(category.name + ".html", r2, 'utf8');
+
+    });
 
