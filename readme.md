@@ -2,16 +2,15 @@
 ----
 
 
-Как добавлять картинки:
+Как обновлять каталог:
 
 https://anton-v-svetlov.netlify.com/admin/index.html#
 
-Как редактировать текст общих блоков:
+Как редактировать текст общих описаний:
 
 http://www.anton-v-svetlov.by/massiv.html?login#admin
 
-Как опубликовать картинки:
-
+Как публиковать обновления каталога:
 ```
 git pull
 npm run build-galleries
