@@ -10,5 +10,14 @@ https://anton-v-svetlov.netlify.com/admin/index.html#
 
 http://www.anton-v-svetlov.by/massiv.html?login#admin
 
+Как опубликовать картинки:
+
+```
+git pull
+npm run build-galleries
+git add . && git commit -m "JAMSTACK: gallery update"
+git push origin master
+```
+
 
 
