@@ -8,12 +8,12 @@ media_folder: "images/upload"
 options: 
   - Кухня
   - Изделия из массива дерева
-
+  - Шкафы купе
+  
 collections: 
   - name: "massiv" 
     label: "Изделия из массива дерева"
     folder: "content/massiv"
-
     create: true
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
@@ -33,7 +33,7 @@ collections:
     fields:
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text"}, required: false}
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
       - {label: "Фотография1", name: "photo1", widget: "image"}
       - {label: "Фотография2", name: "photo2", widget: "image", required: false}	
       - {label: "Фотография3", name: "photo3", widget: "image", required: false}		  
