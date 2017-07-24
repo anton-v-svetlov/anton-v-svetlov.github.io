@@ -8,8 +8,8 @@ media_folder: "images/upload"
 options: 
   - Кухня
   - Изделия из массива дерева
-  - Шкафы купе
-  
+  - Шкафы купe
+
 collections: 
   - name: "massiv" 
     label: "Изделия из массива дерева"
