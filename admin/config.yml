@@ -40,3 +40,13 @@ collections:
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
       - {label: "Фотография1", name: "photo1", widget: "image"}
+
+  - name: "detskaya" 
+    label: "Детская мебель"
+    folder: "content/detskaya"
+    create: true
+    fields:
+      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Короткое описание", name: "description", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Фотография1", name: "photo1", widget: "image"}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" lang="ru" />
   <meta name="viewport" content="width=device-width">
-  <title>Шкафы купе.</title>
+  <title><%= headtitle %></title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css'>
   <link rel="stylesheet" href="stylesheets/gallery.css">
@@ -17,9 +17,9 @@
   <div style="margin: auto;   text-align: center;">
     <a href="index.html">На главную</a>
   </div>
-  <h2>Примеры шкафов купе</h2>
-  <div mv-app="gallery" id="admin" mv-bar="status edit save clear logout" mv-storage="https://github.com/anton-v-svetlov/anton-v-svetlov.github.io/content/shkaf_kupe/contentDescription.txt">
-    <h3 property="contentDescription">Шкафы купе.</span>
+  <h2><%= bodyh2 %></h2>
+  <div mv-app="gallery" id="admin" mv-bar="status edit save clear logout" mv-storage="https://github.com/anton-v-svetlov/anton-v-svetlov.github.io/content/<%= name %>/contentDescription.txt">
+    <h3 property="contentDescription"><%= contentDescription %></span>
   </div>
   <div itemscope itemtype="http://schema.org/ImageGallery">
 
