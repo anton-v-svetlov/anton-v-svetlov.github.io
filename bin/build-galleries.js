@@ -5,15 +5,9 @@ const md = require("markdown-it")();
 const _ = require("lodash");
 const parse5 = require("parse5");
 const path = require("path");
-const yaml = require("js-yaml")
 const figure = "templates/item.template.html";
 const gallery = "templates/gallery.template.html";
 
-
-
-fs.readFileSync('/home/ixti/example.yml', 'utf8')
-
-/*
 
 function Category(name) {
     return { name: name };
@@ -89,4 +83,3 @@ let category2 = new Category("detskaya");
 let content2 = new Content(category2);
 let categoryView2 = new CategoryView(category2, "Детская мебель.", "Примеры сделанной мной детской мебели.", "");
 buildCategry(category2,content2, categoryView2);
-*/
