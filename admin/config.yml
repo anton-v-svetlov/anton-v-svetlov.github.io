@@ -3,84 +3,19 @@ backend:
   repo: anton-v-svetlov/anton-v-svetlov.github.io
   branch: master
 
-media_folder: "images/upload"   
-  
-options: 
-  - Кухня
-  - Изделия из массива дерева
-  - Шкафы купe
-  - Детская
+media_folder: "images/products/upload"   
 
 collections: 
-  - name: "massiv" 
-    label: "Изделия из массива дерева"
-    folder: "content/massiv"
+  - name: "products" 
+    label: "Изделия"
+    folder: "content/products"
     create: true
     fields:
+      - {select: "Категория", name: "category", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
       - {label: "Главная Фотография", name: "photo1", widget: "image"}
-      - {label: "Фотография2", name: "photo2", widget: "image", required: false}	  
-      - {label: "Фотография3", name: "photo3", widget: "image", required: false}	  
-      - {label: "Фотография4", name: "photo4", widget: "image", required: false}  
-      - {label: "Фотография5", name: "photo5", widget: "image", required: false}
-      - {label: "Модель(эскиз, чертеж, 3D, интерьер)", name: "model1", widget: "image", required: false}
-      - {label: "Модель2", name: "model2", widget: "image", required: false}
-      - {label: "Модель3", name: "model3", widget: "image", required: false}
-      - {label: "Модель4", name: "model4", widget: "image", required: false}
-      - {label: "Модель5", name: "model5", widget: "image", required: false}
-      - {label: "Модель6", name: "model6", widget: "image", required: false}
-
-  - name: "kuhni" 
-    label: "Кухни"
-    folder: "content/kuhni"
-    create: true
-    fields:
-      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text", required: false}
-      - {label: "Главная Фотография", name: "photo1", widget: "image"}
-      - {label: "Фотография2", name: "photo2", widget: "image", required: false}	  
-      - {label: "Фотография3", name: "photo3", widget: "image", required: false}	  
-      - {label: "Фотография4", name: "photo4", widget: "image", required: false}  
-      - {label: "Фотография5", name: "photo5", widget: "image", required: false}
-      - {label: "Модель(эскиз, чертеж, 3D, интерьер)", name: "model1", widget: "image", required: false}
-      - {label: "Модель2", name: "model2", widget: "image", required: false}
-      - {label: "Модель3", name: "model3", widget: "image", required: false}
-      - {label: "Модель4", name: "model4", widget: "image", required: false}
-      - {label: "Модель5", name: "model5", widget: "image", required: false}
-      - {label: "Модель6", name: "model6", widget: "image", required: false}
-	  
-  - name: "shkaf_kupe" 
-    label: "Шкафы купе"
-    folder: "content/shkaf_kupe"
-    create: true
-    fields:
-      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text", required: false}
-      - {label: "Главная Фотография", name: "photo1", widget: "image"}
-      - {label: "Фотография2", name: "photo2", widget: "image", required: false}	  
-      - {label: "Фотография3", name: "photo3", widget: "image", required: false}	  
-      - {label: "Фотография4", name: "photo4", widget: "image", required: false}  
-      - {label: "Фотография5", name: "photo5", widget: "image", required: false}
-      - {label: "Модель(эскиз, чертеж, 3D, интерьер)", name: "model1", widget: "image", required: false}
-      - {label: "Модель2", name: "model2", widget: "image", required: false}
-      - {label: "Модель3", name: "model3", widget: "image", required: false}
-      - {label: "Модель4", name: "model4", widget: "image", required: false}
-      - {label: "Модель5", name: "model5", widget: "image", required: false}
-      - {label: "Модель6", name: "model6", widget: "image", required: false}
- 
- - name: "detskaya" 
-    label: "Детская мебель"
-    folder: "content/detskaya"
-    create: true
-    fields:
-      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Короткое описание", name: "description", widget: "string"}
-      - {label: "Длинное описание", name: "body", widget: "text", required: false}
-      - {label: "Фотография1", name: "photo1", widget: "image"}      - {label: "Главная Фотография", name: "photo1", widget: "image"}
       - {label: "Фотография2", name: "photo2", widget: "image", required: false}	  
       - {label: "Фотография3", name: "photo3", widget: "image", required: false}	  
       - {label: "Фотография4", name: "photo4", widget: "image", required: false}  
