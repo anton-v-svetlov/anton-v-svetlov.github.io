@@ -47,10 +47,16 @@ function buildCategry(category, content, categoryView) {
             else if (x.content.startsWith("category: ")) {
                 item.category = x.content.split("category: ")[1];
             }
+            else if (x.content.startsWith("category2: ")) {
+                item.category2 = x.content.split("category2: ")[1];
+            }
+            else if (x.content.startsWith("category3: ")) {
+                item.category3 = x.content.split("category3: ")[1];
+            }          
         });
         item.body = parsed[parsed.length - 2].content;
         return item;
-    }).filter(x => x.category == category.name);
+    }).filter(x => x.category === category.name || x.category2 === category.name || x.category3 === category.name);
 
     function transform(from, to, fillImage) {
         return jimp.read(from).then(img => {
@@ -99,8 +105,12 @@ let content2 = new Content(category2);
 let categoryView2 = new CategoryView(category2, "Детская мебель.", "Примеры сделанной мной детской мебели.", "");
 buildCategry(category2, content2, categoryView2);
 
-
 let category3 = new Category("stol");
 let content3 = new Content(category3);
 let categoryView3 = new CategoryView(category3, "Столы и столики", "Примеры сделанных мной столов и столиков.", "");
 buildCategry(category3, content3, categoryView3);
+
+let category4 = new Category("massiv");
+let content4 = new Content(category4);
+let categoryView4 = new CategoryView(category4, "Мебель из массива дерева.", "Примеры работ из массива дерева.", "Изделия из массива дерева. Натуральные, долговечные, надежные.");
+buildCategry(category4, content4, categoryView4);

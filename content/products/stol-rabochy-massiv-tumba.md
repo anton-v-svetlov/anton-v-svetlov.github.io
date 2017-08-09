@@ -5,7 +5,7 @@ category3: null
 title: stol rabochy massiv tumba
 description: Cтол рабочий из массива дерева.
 photo1: /images/products/upload/стол_рабочий_тумба_массив_дерево.jpg
-photo2: /images/products/upload/стол_рабочий_тумба_массив_дерево.jpg
+photo2: null
 photo3: null
 photo4: null
 photo5: null
