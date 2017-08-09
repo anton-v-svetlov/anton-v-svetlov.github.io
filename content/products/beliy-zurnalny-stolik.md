@@ -2,9 +2,7 @@
 category: stol
 title: beliy zurnalny stolik
 description: Белый журнальный столик
-photo1: >-
-  /images/products/upload/универсальный легкий журнальный столик
-  IMG_20170529_181109.jpg
+photo1: /images/products/upload/IMG_20170529_181109.jpg
 photo2: null
 photo3: null
 photo4: null

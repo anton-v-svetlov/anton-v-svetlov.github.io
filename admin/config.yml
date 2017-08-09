@@ -12,6 +12,8 @@ collections:
     create: true
     fields:
       - {select: "Категория", name: "category", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
+      - {select: "Категория2", name: "category2", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
+      - {select: "Категория3", name: "category3", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}	  
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
@@ -26,3 +28,34 @@ collections:
       - {label: "Модель4", name: "model4", widget: "image", required: false}
       - {label: "Модель5", name: "model5", widget: "image", required: false}
       - {label: "Модель6", name: "model6", widget: "image", required: false}
+
+	  
+collections: 
+  - name: "services" 
+    label: "Сервисы"
+    folder: "content/services"
+    create: true
+    fields:
+      - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Короткое описание", name: "description", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Фотография примера", name: "photo1", widget: "image"}
+      - {label: "Иконка/пиктограмма", name: "model1", widget: "image", required: false}
+	  
+collections: 
+  - name: "persons" 
+    label: "Люди"
+    folder: "content/persons"
+    create: true
+    fields:
+      - {label: "Имя latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {select: "Должность", name: "category", widget: "select",  options: ["founder", "partner", "owner","relative"]}	  
+      - {label: "Короткое описание", name: "description", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Имя", name: "firstName", widget: "string"}
+      - {label: "Отчество", name: "midName", widget: "string"}
+      - {label: "Фамилия", name: "lastName", widget: "string"}	  
+      - {label: "Ссылка", name: "link", widget: "string"}		  
+      - {label: "Фотография 1", name: "photo1", widget: "image"}
+      - {label: "Фотография 2", name: "photo1", widget: "image"}	  
+      - {label: "Фотография 3", name: "photo1", widget: "image"}	        

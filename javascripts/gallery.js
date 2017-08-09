@@ -94,7 +94,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
         if (index >= 0) {
             // open PhotoSwipe if valid index found
-            openPhotoSwipe(index - 2, clickedGallery);
+            openPhotoSwipe(index, clickedGallery);
         }
         return false;
     };

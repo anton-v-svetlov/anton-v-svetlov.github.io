@@ -9,12 +9,6 @@ const yaml = require("js-yaml")
 const figure = "templates/item.template.html";
 const gallery = "templates/gallery.template.html";
 
-
-
-fs.readFileSync('/home/ixti/example.yml', 'utf8')
-
-/*
-
 function Category(name) {
     return { name: name };
 }
@@ -31,17 +25,32 @@ let fg = fs.readFileSync(figure, 'utf8');
 let gl = fs.readFileSync(gallery, 'utf8');
 
 function buildCategry(category, content, categoryView) {
-    let allFlags = fs.readdirSync(content.textDir);
+    let allFlags = fs.readdirSync("content/products/");//content.textDir);
 
     let items = allFlags.map(x => {
-        let itemText = fs.readFileSync(content.textDir + x, 'utf8');
+        let itemText = fs.readFileSync("content/products/" + x, 'utf8');
         let parsed = md.parse(itemText);
-        let title = parsed[2].children[0].content.split("title: ")[1];
-        let description = parsed[2].children[2].content.split("description: ")[1];
-        let photo1 = parsed[2].children[4].content.split("photo1: ")[1].replace("/im", "im");
-        let body = parsed[5].children[0].content;
-        return { title: title, description: description, photo1: photo1, body: body };
-    });
+
+        let heading = _.filter(parsed, x => x.type === 'inline')[0];
+        let item = {};
+
+        _.forEach(heading.children, x => {
+            if (x.content.startsWith("title: ")) {
+                item.title = x.content.split("title: ")[1];
+            }
+            else if (x.content.startsWith("description: ")) {
+                item.description = x.content.split("description: ")[1];
+            }
+            else if (x.content.startsWith("photo1: ")) {
+                item.photo1 = x.content.split("photo1: ")[1].replace("/im", "im");
+            }
+            else if (x.content.startsWith("category: ")) {
+                item.category = x.content.split("category: ")[1];
+            }
+        });
+        item.body = parsed[parsed.length - 2].content;
+        return item;
+    }).filter(x => x.category == category.name);
 
     function transform(from, to, fillImage) {
         return jimp.read(from).then(img => {
@@ -88,5 +97,10 @@ buildCategry(category,content, categoryView);
 let category2 = new Category("detskaya");
 let content2 = new Content(category2);
 let categoryView2 = new CategoryView(category2, "Детская мебель.", "Примеры сделанной мной детской мебели.", "");
-buildCategry(category2,content2, categoryView2);
-*/
+buildCategry(category2, content2, categoryView2);
+
+
+let category3 = new Category("stol");
+let content3 = new Content(category3);
+let categoryView3 = new CategoryView(category3, "Столы и столики", "Примеры сделанных мной столов и столиков.", "");
+buildCategry(category3, content3, categoryView3);
