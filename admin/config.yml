@@ -28,9 +28,7 @@ collections:
       - {label: "Модель4", name: "model4", widget: "image", required: false}
       - {label: "Модель5", name: "model5", widget: "image", required: false}
       - {label: "Модель6", name: "model6", widget: "image", required: false}
-
-	  
-collections: 
+ 
   - name: "services" 
     label: "Сервисы"
     folder: "content/services"
@@ -42,7 +40,6 @@ collections:
       - {label: "Фотография примера", name: "photo1", widget: "image"}
       - {label: "Иконка/пиктограмма", name: "model1", widget: "image", required: false}
 	  
-collections: 
   - name: "persons" 
     label: "Люди"
     folder: "content/persons"
