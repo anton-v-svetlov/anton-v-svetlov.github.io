@@ -11,9 +11,9 @@ collections:
     folder: "content/products"
     create: true
     fields:
-      - {select: "Категория", name: "category", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
-      - {select: "Категория2", name: "category2", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
-      - {select: "Категория3", name: "category3", widget: "select",  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}	  
+      - {select: "Категория", name: "category", widget: "select", required: false,  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
+      - {select: "Категория2", name: "category2", widget: "select", required: false,  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}
+      - {select: "Категория3", name: "category3", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol"]}	  
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
