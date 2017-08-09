@@ -95,10 +95,19 @@ function buildCategry(category, content, categoryView) {
         });
 }
 
-let category = new Category("shkaf_kupe");
-let content = new Content(category);
-let categoryView = new CategoryView(category, "Шкафы купе", "Примеры шкафов купе", "Шафы-купе, дверцы у них открываются не настежь, а в сторону, экономя при этом пространство комнаты. Встроенные шкафы купе максимально эффективно используют пространство.");
-buildCategry(category,content, categoryView);
+{
+  let category = new Category("shkaf_kupe");
+  let content = new Content(category);
+  let categoryView = new CategoryView(category, "Шкафы купе", "Примеры шкафов купе", "Шафы-купе, дверцы у них открываются не настежь, а в сторону, экономя при этом пространство комнаты. Встроенные шкафы купе максимально эффективно используют пространство.");
+  buildCategry(category,content, categoryView);
+}
+
+{
+  let category = new Category("torgovoe");
+  let content = new Content(category);
+  let categoryView = new CategoryView(category, "Торговое оборудование", "Примеры торгового оборудования", "Оборудование которое я сделал для магазинов, точек продаж, работы с клиентами");
+  buildCategry(category,content, categoryView);
+}
 
 let category2 = new Category("detskaya");
 let content2 = new Content(category2);
@@ -114,3 +123,4 @@ let category4 = new Category("massiv");
 let content4 = new Content(category4);
 let categoryView4 = new CategoryView(category4, "Мебель из массива дерева.", "Примеры работ из массива дерева.", "Изделия из массива дерева. Натуральные, долговечные, надежные.");
 buildCategry(category4, content4, categoryView4);
+
