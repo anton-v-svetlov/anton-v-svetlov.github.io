@@ -109,6 +109,13 @@ function buildCategry(category, content, categoryView) {
   buildCategry(category,content, categoryView);
 }
 
+{
+  let category = new Category("vstroenaya");
+  let content = new Content(category);
+  let categoryView = new CategoryView(category, "Встроенная мебель", "Примеры втроенной мебели", "Встроенная мебель максимально эффективно использует пространство и вписывается в помещение. ");
+  buildCategry(category,content, categoryView);
+}
+
 let category2 = new Category("detskaya");
 let content2 = new Content(category2);
 let categoryView2 = new CategoryView(category2, "Детская мебель.", "Примеры сделанной мной детской мебели.", "");

@@ -39,6 +39,17 @@ collections:
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
       - {label: "Фотография примера", name: "photo1", widget: "image"}
       - {label: "Иконка/пиктограмма", name: "model1", widget: "image", required: false}
+
+  - name: "categories" 
+    label: "Виды мебели"
+    folder: "content/categories"
+    create: true
+    fields:
+      - {label: "Название latinicei", name: "title", widget: "str ing", tagname: "h1"}
+      - {label: "Короткое описание", name: "description", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Фотография примера", name: "photo1", widget: "image"}
+      - {label: "Иконка/пиктограмма", name: "model1", widget: "image", required: false}      
 	  
   - name: "persons" 
     label: "Люди"
@@ -56,3 +67,21 @@ collections:
       - {label: "Фотография 1", name: "photo1", widget: "image"}
       - {label: "Фотография 2", name: "photo1", widget: "image"}	  
       - {label: "Фотография 3", name: "photo1", widget: "image"}	        
+
+
+  - name: "own" 
+    label: "Владение"
+    folder: "content/own"
+    create: true
+    fields:
+      - {label: "Имя latinicei", name: "title", widget: "string", tagname: "h1"}
+      - {select: "Должность", name: "category", widget: "select",  options: ["founder", "partner", "owner","relative"]}	  
+      - {label: "Короткое описание", name: "description", widget: "string"}
+      - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Имя", name: "firstName", widget: "string"}
+      - {label: "Отчество", name: "midName", widget: "string"}
+      - {label: "Фамилия", name: "lastName", widget: "string"}	  
+      - {label: "Ссылка", name: "link", widget: "string"}		  
+      - {label: "Фотография 1", name: "photo1", widget: "image"}
+      - {label: "Фотография 2", name: "photo1", widget: "image"}	  
+      - {label: "Фотография 3", name: "photo1", widget: "image"}	   
