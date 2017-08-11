@@ -5,8 +5,7 @@ category3: null
 title: cherny stol dlia kabineta muziki
 description: Cтол в кабинет для музыкального режиссера
 date: 2017-08-11T14:39:33.187Z
-photo1: >-
-  /images/products/upload/media-share-0-02-04-0ded7c84f6c37efads8-179b97504def_proc.jpg
+photo1: /images/products/upload/media-share-0-02-04-0ded7c84f6c37efads8.jpg
 photo2: null
 photo3: null
 photo4: null
