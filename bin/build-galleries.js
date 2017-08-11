@@ -104,7 +104,7 @@ function buildCategry(category, content, categoryView) {
 {
   let category = new Category("shkaf_kupe");
   let content = new Content(category);
-  let categoryView = new CategoryView(category, "Шкафы купе", "Примеры шкафов купе", "Шафы-купе, дверцы у них открываются не настежь, а в сторону, экономя при этом пространство комнаты. Встроенные шкафы купе максимально эффективно используют пространство.");
+  let categoryView = new CategoryView(category, "Шкафы купе", "Примеры шкафов купе", "Дверцы таких шкафов открываются в сторону, а не настежь.");
   buildCategry(category,content, categoryView);
 }
 
