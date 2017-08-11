@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" lang="ru" />
   <meta name="viewport" content="width=device-width">
-  <title><%= headtitle %></title>
+  <title>Кухни</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css'>
   <link rel="stylesheet" href="stylesheets/gallery.css">
@@ -15,15 +15,35 @@
 
 <body>
   <div style="margin: auto;   text-align: center;">
-    <a href="index.html"><h3>← На главную. Посмотерть другие работы и мои контакты.</3></a>
+    <a href="index.html">На главную</a>
   </div>
-  <h2><%= bodyh2 %></h2>
-  <div mv-app="gallery" id="admin" mv-bar="status edit save clear logout" mv-storage="https://github.com/anton-v-svetlov/anton-v-svetlov.github.io/content/<%= name %>/contentDescription.txt">
-    <h3 property="contentDescription"><%= contentDescription %></span>
+  <h2>Примеры кухонь</h2>
+  <div mv-app="gallery" id="admin" mv-bar="status edit save clear logout" mv-storage="https://github.com/anton-v-svetlov/anton-v-svetlov.github.io/content/kuhni/contentDescription.txt">
+    <h3 property="contentDescription"></span>
   </div>
   <div itemscope itemtype="http://schema.org/ImageGallery">
 
-  <%= gallery %>
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/products/upload/P60114-132015.jpg" itemprop="contentUrl" data-size="1920x2560">
+        <img src="images/gallery/kuhni/thumb/P60114-132015.jpg" itemprop="thumbnail" alt="Кухня в квартиру в нежных тонах" width="192" height="256"
+        />
+      </a>
+      <figcaption itemprop="caption description">Кухня в квартиру в нежных тонах. Встроенная газовая панель и вытяжка. Плиточная отделка.</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/products/upload/314738.jpg" itemprop="contentUrl" data-size="3264x2448">
+        <img src="images/gallery/kuhni/thumb/314738.jpg" itemprop="thumbnail" alt="Кухня светлая под дерево" width="256" height="192"
+        />
+      </a>
+      <figcaption itemprop="caption description">Светлая кухня с встроенной варочной панелью, покрытие под дерево, столешница под мрамор, ручки под золото.</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="images/products/upload/12559293.jpg" itemprop="contentUrl" data-size="1024x768">
+        <img src="images/gallery/kuhni/thumb/12559293.jpg" itemprop="thumbnail" alt="Кухня в частный дом из сруба под дерево" width="256" height="192"
+        />
+      </a>
+      <figcaption itemprop="caption description">Светлая кухня в частный дом из сруба под дерево. Встроенные варочная панель и духовка.</figcaption>
+    </figure>
 
   </div>
 

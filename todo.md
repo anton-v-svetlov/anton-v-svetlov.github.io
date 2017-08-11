@@ -18,4 +18,6 @@
 
 Уменьшить картинки
 
-Add Schema OWNS
+Add Schema OWNS.
+
+На главную. Другие работы.

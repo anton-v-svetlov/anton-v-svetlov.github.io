@@ -1,5 +1,5 @@
 ---
-category: null
+category: kuhni
 category2: null
 category3: null
 title: kuhnia v 4astni dom srub pod дерево

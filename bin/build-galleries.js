@@ -58,6 +58,11 @@ function buildCategry(category, content, categoryView) {
         return item;
     }).filter(x => x.category === category.name || x.category2 === category.name || x.category3 === category.name);
 
+    /**
+ * Checks whether one string contains another string
+ * @param {string} from - the string to test against
+ * @return {string}
+ */
     function transform(from, to, fillImage) {
         return jimp.read(from).then(img => {
             let images = {};
@@ -70,7 +75,8 @@ function buildCategry(category, content, categoryView) {
             images.thumb_height = thumb.bitmap.height;
             return fillImage(images);
         });
-    }
+    }   
+    
 
     function fillImage(x, photo1_thumb, img) {
         let model = {
@@ -99,6 +105,13 @@ function buildCategry(category, content, categoryView) {
   let category = new Category("shkaf_kupe");
   let content = new Content(category);
   let categoryView = new CategoryView(category, "Шкафы купе", "Примеры шкафов купе", "Шафы-купе, дверцы у них открываются не настежь, а в сторону, экономя при этом пространство комнаты. Встроенные шкафы купе максимально эффективно используют пространство.");
+  buildCategry(category,content, categoryView);
+}
+
+{
+  let category = new Category("kuhni");
+  let content = new Content(category);
+  let categoryView = new CategoryView(category, "Кухни", "Примеры кухонь", "");
   buildCategry(category,content, categoryView);
 }
 

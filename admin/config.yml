@@ -11,12 +11,13 @@ collections:
     folder: "content/products"
     create: true
     fields:
-      - {select: "Категория", name: "category", widget: "select", required: false,  options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna"]}
-      - {select: "Категория2", name: "category2", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna"]}
-      - {select: "Категория3", name: "category3", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna"]}
+      - {select: "Категория", name: "category", widget: "select", required: true, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna", "balkon"]}
+      - {select: "Категория2", name: "category2", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna", "balkon"]}
+      - {select: "Категория3", name: "category3", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna", "balkon"]}
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
+      - {label: "Примерная дата монтажа", name: "date", widget: "datetime", format: "YYYY-MM-DD", required: false}
       - {label: "Главная Фотография", name: "photo1", widget: "image"}
       - {label: "Фотография2", name: "photo2", widget: "image", required: false}	  
       - {label: "Фотография3", name: "photo3", widget: "image", required: false}	  
