@@ -11,9 +11,9 @@ collections:
     folder: "content/products"
     create: true
     fields:
-      - {select: "Категория", name: "category", widget: "select", required: true, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna", "balkon"]}
-      - {select: "Категория2", name: "category2", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna", "balkon"]}
-      - {select: "Категория3", name: "category3", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","krovat","spalnia", "offic", "vanna", "balkon"]}
+      - {select: "Категория", name: "category", widget: "select", required: true, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","spalnia", "ofis", "vanna", "balkon", "otdelka", "kabinet"]}
+      - {select: "Категория2", name: "category2", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","spalnia", "ofis", "vanna", "balkon", "otdelka", "kabinet"]}
+      - {select: "Категория3", name: "category3", widget: "select", required: false, options: ["kuhni", "massiv", "shkaf_kupe","detskaya", "stol", "stul", "tumba", "krovat", "torgovoe", "gorki", "zal", "comod", "korpusnaya", "vstroenaya","spalnia", "ofis", "vanna", "balkon", "otdelka", "kabinet"]}
       - {label: "Название latinicei", name: "title", widget: "string", tagname: "h1"}
       - {label: "Короткое описание", name: "description", widget: "string"}
       - {label: "Длинное описание", name: "body", widget: "text", required: false}
